@@ -609,8 +609,10 @@ section {
 
 .credentials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-6);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .credential {
@@ -704,7 +706,7 @@ section {
 
 /* Customer Testimonials Section */
 .testimonials {
-    background: var(--primary-bg);
+    background: linear-gradient(135deg, var(--secondary-bg), var(--card-bg));
 }
 
 .testimonials-grid {
@@ -1070,6 +1072,7 @@ section {
     .credentials-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-4);
+        max-width: none;
     }
     
     .experience-stats {
