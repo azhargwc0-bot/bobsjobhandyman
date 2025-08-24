@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bobsjobshandyman.com/sitemap.xml
+
+# Allow all search engines to crawl the site
+# Bob's Jobs Handyman - Virginia Beach handyman services
+# Emergency repairs, furniture assembly, drywall repair, home improvements
+
+# Crawl delay (optional - removes if causing issues)
+Crawl-delay: 1
+
+# Disallow any admin or temporary directories (add if needed)
+# Disallow: /admin/
+# Disallow: /tmp/

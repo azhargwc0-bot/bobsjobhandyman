@@ -46,7 +46,10 @@
         "longitude": "-75.9780"
       },
       "openingHours": "Mo-Su 00:00-24:00",
-      "areaServed": "Virginia Beach, VA",
+      "areaServed": ["Virginia Beach, VA", "Chesapeake, VA", "Norfolk, VA"],
+      "priceRange": "$75-$500",
+      "paymentAccepted": ["Cash", "Check", "Credit Card"],
+      "currenciesAccepted": "USD",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Handyman Services",
@@ -95,6 +98,80 @@
           }
         ]
       }
+    }
+    </script>
+    
+    <!-- FAQ Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How quickly can you respond to emergency repairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For true emergencies like burst pipes or electrical hazards, we typically arrive within 2-4 hours. For urgent but non-dangerous issues, same-day service is usually available. We understand that some problems can't wait, especially when they affect your family's safety or comfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide free estimates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide free estimates for all non-emergency work. For smaller jobs under $200, we can often give you an accurate quote over the phone. For larger projects, we'll schedule a convenient time to visit your home and provide a detailed written estimate at no charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas of Virginia Beach do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve all of Virginia Beach, including Oceanfront, Hilltop, Kempsville, Princess Anne, and surrounding neighborhoods. Our central location allows us to respond quickly throughout the city. We also serve nearby areas in Chesapeake and Norfolk when scheduling permits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you licensed and insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We're fully licensed as a home improvement contractor in Virginia, bonded, and carry comprehensive liability insurance. We can provide proof of insurance and licensing upon request. This protects both you and us in the unlikely event something goes wrong."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes you different from other handyman services in Virginia Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As lifelong Virginia Beach residents, we understand coastal living challenges that out-of-town contractors miss. We use materials specifically chosen for salt air resistance, know local building codes, and maintain strong relationships with local suppliers. Plus, we're available 24/7 for emergencies and guarantee all our work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with insurance companies for storm damage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we have extensive experience working with insurance companies on storm damage claims. We can provide detailed estimates, photo documentation, and work directly with adjusters. Our emergency response helps minimize damage while you wait for insurance approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do handyman services typically cost in Virginia Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our rates are competitive with Virginia Beach market pricing. Small repairs typically range from $75-200, medium projects $200-500, and larger jobs are quoted individually. We always provide upfront pricing with no hidden fees. Emergency calls have a service charge but no price gouging - we believe in fair pricing even during emergencies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do to prepare for hurricane season?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virginia Beach hurricane preparation should include: securing loose outdoor items, checking roof and gutters, testing generators, trimming trees near structures, and installing storm shutters or plywood. We offer pre-season inspections and can handle most preparation work. After storms, we provide emergency repairs to prevent further damage."
+          }
+        }
+      ]
     }
     </script>
 </head>
