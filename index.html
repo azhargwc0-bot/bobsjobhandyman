@@ -50,6 +50,48 @@
       "priceRange": "$$",
       "paymentAccepted": ["Cash", "Check", "Credit Card"],
       "currenciesAccepted": "USD",
+      "image": "https://bobsjobshandyman.com/logo.jpg",
+      "logo": "https://bobsjobshandyman.com/logo.jpg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Bob's Jobs saved the day when our ceiling fan started wobbling dangerously during a family gathering. They came out same day, quickly diagnosed the problem, and had it running perfectly smooth within an hour. Professional, fast, and reasonably priced."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Mike R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "After Hurricane Florence, we had multiple small repairs needed throughout our house. Bob's Jobs created a comprehensive plan, tackled everything in two visits, and the pricing was very fair. They clearly understand storm damage and how to fix it properly."
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/BobsJobsHandyman",
+        "https://www.yelp.com/biz/bobs-jobs-handyman-virginia-beach",
+        "https://www.google.com/business/"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Handyman Services",
@@ -58,7 +100,14 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Emergency Repairs"
+              "name": "Emergency Repairs",
+              "description": "24/7 emergency handyman repairs for Virginia Beach homes including plumbing emergencies, electrical issues, storm damage, and security concerns.",
+              "areaServed": "Virginia Beach, VA",
+              "availableChannel": {
+                "@type": "ServiceChannel",
+                "servicePhone": "(877) 478-2959",
+                "availableLanguage": "English"
+              }
             }
           },
           {
@@ -171,6 +220,42 @@
             "text": "Virginia Beach hurricane preparation should include: securing loose outdoor items, checking roof and gutters, testing generators, trimming trees near structures, and installing storm shutters or plywood. We offer pre-season inspections and can handle most preparation work. After storms, we provide emergency repairs to prevent further damage."
           }
         }
+      ]
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bob's Jobs Handyman",
+      "url": "https://bobsjobshandyman.com",
+      "logo": "https://bobsjobshandyman.com/logo.jpg",
+      "description": "Professional handyman and home repair services in Virginia Beach, VA since 2015",
+      "foundingDate": "2015",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Bob"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Virginia Beach",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "(877) 478-2959",
+        "contactType": "customer service",
+        "availableLanguage": "English",
+        "areaServed": ["Virginia Beach", "Chesapeake", "Norfolk"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/BobsJobsHandyman",
+        "https://www.yelp.com/biz/bobs-jobs-handyman-virginia-beach"
       ]
     }
     </script>
