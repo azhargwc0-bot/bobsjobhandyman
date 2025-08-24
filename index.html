@@ -19,6 +19,28 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background: #1a1f36; color: #ffffff; overflow-x: hidden; }
         .hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #1a1f36 0%, #2a3458 100%); }
+        
+        /* Force credentials grid to 2x2 layout */
+        .credentials-grid {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 1.5rem !important;
+            max-width: 900px !important;
+            margin: 0 auto !important;
+        }
+        .credential {
+            padding: 1.5rem !important;
+            background: #2a3458 !important;
+            border-radius: 0.75rem !important;
+            border: 1px solid rgba(0, 212, 170, 0.1) !important;
+            text-align: center !important;
+        }
+        
+        @media (max-width: 768px) {
+            .credentials-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
     
     <!-- Main stylesheet -->
