@@ -1329,6 +1329,32 @@ section {
     outline-offset: 2px;
 }
 
+/* Internal Links Styling */
+a {
+    color: var(--accent-teal);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-teal-dark);
+    text-decoration: underline;
+}
+
+.hero-subtitle a,
+.section-subtitle a,
+p a {
+    color: var(--accent-teal);
+    font-weight: 500;
+}
+
+.hero-subtitle a:hover,
+.section-subtitle a:hover,
+p a:hover {
+    color: var(--accent-teal-dark);
+    text-decoration: underline;
+}
+
 /* Print Styles */
 @media print {
     .navbar,
