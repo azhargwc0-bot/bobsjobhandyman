@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trusted handyman Virginia Beach residents rely on for 24/7 emergency repairs, furniture assembly, drywall fixes, and home improvements. Licensed, insured, and locally owned since 2015. Free estimates available.">
+    <meta name="description" content="Trusted handyman Virginia Beach residents rely on for 24/7 emergency repairs, furniture assembly, drywall fixes, and home improvements. Licensed, insured, and locally owned since 2015.">
     <meta name="keywords" content="handyman Virginia Beach, emergency handyman Virginia Beach, furniture assembly Virginia Beach, drywall repair Virginia Beach, toilet installation Virginia Beach">
     <meta name="author" content="Bob's Jobs Handyman">
-    <title>Bob's Jobs Handyman | Trusted Virginia Beach Home Repair & Improvement Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bob's Jobs Handyman | Professional Virginia Beach Home Repair Services</title>
+    
+    <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline for fast loading -->
+    <style>
+        /* Critical above-the-fold styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #1a1f36; color: #ffffff; overflow-x: hidden; }
+        .hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #1a1f36 0%, #2a3458 100%); }
+    </style>
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Schema.org Local Business Markup -->
     <script type="application/ld+json">
@@ -87,635 +99,385 @@
     </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="nav-brand">
                 <h1>Bob's Jobs</h1>
                 <span>Handyman</span>
             </div>
-            <div class="nav-contact">
-                <a href="tel:(877) 478-2959" class="phone-link">(877) 478-2959</a>
-            </div>
-        </nav>
-    </header>
+            <a href="tel:(877) 478-2959" class="nav-phone">
+                <span class="phone-icon">📞</span>
+                <span>(877) 478-2959</span>
+            </a>
+        </div>
+    </nav>
 
-    <!-- Hero Section -->
+    <!-- Modern Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="hero-image-placeholder">
-                <span class="image-label">Professional Handyman at Work<br>1920x1080px</span>
-            </div>
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-icon">⭐</span>
-                <span>Virginia Beach's #1 Rated Handyman</span>
-            </div>
-            <h1 class="hero-title">Expert Home Repairs<br><span class="accent-text">Done Right, Done Fast</span></h1>
-            <p class="hero-subtitle">Professional handyman services Virginia Beach homeowners have trusted for over 8 years. From emergency repairs to weekend projects, we handle it all with precision and care.</p>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number">8+</div>
-                    <div class="stat-label">Years Experience</div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⭐</span>
+                    <span>Virginia Beach's #1 Handyman</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Emergency Service</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Guaranteed Work</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">⚡</div>
-                    <div class="stat-label">Fast Response</div>
-                </div>
-            </div>
-            
-            <div class="hero-buttons">
-                <a href="tel:(877) 478-2959" class="btn btn-primary btn-large">
-                    <span class="btn-icon">📞</span>
-                    <div class="btn-content">
-                        <span class="btn-main">Call Now</span>
-                        <span class="btn-sub">(877) 478-2959</span>
-                    </div>
-                </a>
-                <a href="#estimate" class="btn btn-secondary btn-large">
-                    <span class="btn-icon">📋</span>
-                    <div class="btn-content">
-                        <span class="btn-main">Free Estimate</span>
-                        <span class="btn-sub">No obligations</span>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="hero-trust-indicators">
-                <div class="trust-item">
-                    <span class="trust-icon">🛡️</span>
-                    <span>Licensed & Insured</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">💯</span>
-                    <span>Satisfaction Guaranteed</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">🏆</span>
-                    <span>A+ Rated Service</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Our Expertise</span>
-                <h2 class="section-title">Professional Home Services<br><span class="accent-text">Virginia Beach Trusts</span></h2>
-                <p class="section-subtitle">From emergency repairs to planned improvements, we handle every job with the skill and attention your home deserves. Here's how we solve your most pressing home challenges:</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card featured">
-                    <div class="service-image-placeholder">
-                        <span class="image-label">Emergency Repair Service<br>400x250px</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-header">
-                            <div class="service-icon">⚡</div>
-                            <div class="service-badge">24/7 Available</div>
-                        </div>
-                        <h3>Emergency Home Repairs</h3>
-                        <p class="service-excerpt">When disaster strikes – burst pipes, electrical issues, or storm damage – we respond fast to minimize damage and restore safety.</p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>2-4 Hour Emergency Response</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Available Nights & Weekends</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>All Emergency Types Covered</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-details">
-                            <h4>Emergency Services Include:</h4>
-                            <div class="details-grid">
-                                <span>• Plumbing emergencies</span>
-                                <span>• Electrical problems</span>
-                                <span>• Storm damage repair</span>
-                                <span>• Security concerns</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-cta">
-                            <a href="tel:(877) 478-2959" class="btn btn-emergency">Emergency Call</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-image-placeholder">
-                        <span class="image-label">Furniture Assembly Expert<br>400x250px</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-header">
-                            <div class="service-icon">🛠️</div>
-                            <div class="service-badge">Expert Assembly</div>
-                        </div>
-                        <h3>Furniture Assembly & Installation</h3>
-                        <p class="service-excerpt">Skip the frustration of confusing manuals. We assemble everything from IKEA sets to complex entertainment centers with precision.</p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>All Furniture Brands</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Tools & Hardware Included</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>90-Day Assembly Warranty</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-details">
-                            <h4>Popular Assembly Services:</h4>
-                            <div class="details-grid">
-                                <span>• Bedroom sets & bed frames</span>
-                                <span>• Office furniture</span>
-                                <span>• Entertainment centers</span>
-                                <span>• Children's furniture</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-cta">
-                            <a href="#estimate" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-image-placeholder">
-                        <span class="image-label">Drywall Repair Professional<br>400x250px</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-header">
-                            <div class="service-icon">🎨</div>
-                            <div class="service-badge">Seamless Repair</div>
-                        </div>
-                        <h3>Drywall Repair & Patching</h3>
-                        <p class="service-excerpt">Transform damaged walls back to perfect condition with professional patching, texturing, and painting that matches seamlessly.</p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Color & Texture Matching</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Any Size Hole or Crack</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Same-Day Small Repairs</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-details">
-                            <h4>Common Drywall Issues:</h4>
-                            <div class="details-grid">
-                                <span>• Nail pops & screw holes</span>
-                                <span>• Accident damage</span>
-                                <span>• Water damage stains</span>
-                                <span>• Settling cracks</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-cta">
-                            <a href="#estimate" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-image-placeholder">
-                        <span class="image-label">Plumbing Installation Expert<br>400x250px</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-header">
-                            <div class="service-icon">🔧</div>
-                            <div class="service-badge">Plumbing Pro</div>
-                        </div>
-                        <h3>Toilet Installation & Repair</h3>
-                        <p class="service-excerpt">Professional toilet installation and repair services that ensure proper function, efficiency, and long-lasting performance.</p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>All Toilet Types & Brands</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Water-Saving Upgrades</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Proper Sealing Guaranteed</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-details">
-                            <h4>Toilet Services Include:</h4>
-                            <div class="details-grid">
-                                <span>• New installations</span>
-                                <span>• Repair & troubleshooting</span>
-                                <span>• Wax ring replacement</span>
-                                <span>• Efficiency upgrades</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-cta">
-                            <a href="#estimate" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-image-placeholder">
-                        <span class="image-label">Door Installation Specialist<br>400x250px</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-header">
-                            <div class="service-icon">🚪</div>
-                            <div class="service-badge">Perfect Fit</div>
-                        </div>
-                        <h3>Door Repair & Installation</h3>
-                        <p class="service-excerpt">Fix sticking doors, damaged frames, and security issues with precision installation and repair for smooth operation.</p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Interior & Exterior Doors</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Frame Repair & Adjustment</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Weather Sealing Included</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-details">
-                            <h4>Door Issues We Fix:</h4>
-                            <div class="details-grid">
-                                <span>• Sticking & alignment</span>
-                                <span>• Frame & hinge damage</span>
-                                <span>• Weather stripping</span>
-                                <span>• New door hanging</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-cta">
-                            <a href="#estimate" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-image-placeholder">
-                        <span class="image-label">Ceiling Fan Installation<br>400x250px</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-header">
-                            <div class="service-icon">💨</div>
-                            <div class="service-badge">Electrical Safe</div>
-                        </div>
-                        <h3>Ceiling Fan Installation & Repair</h3>
-                        <p class="service-excerpt">Safe, professional ceiling fan installation with proper wiring, secure mounting, and perfect balancing for quiet operation.</p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Electrical Safety Certified</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Perfect Balance & Quiet</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-check">✓</span>
-                                <span>Light Integration Available</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-details">
-                            <h4>Fan Services Include:</h4>
-                            <div class="details-grid">
-                                <span>• New installations</span>
-                                <span>• Motor repair & replacement</span>
-                                <span>• Balancing & noise fixes</span>
-                                <span>• Light fixture integration</span>
-                            </div>
-                        </div>
-                        
-                        <div class="service-cta">
-                            <a href="#estimate" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <h2>Why Virginia Beach Homeowners Trust Bob's Jobs</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Since 2015, we've been the go-to handyman service for Virginia Beach residents who need reliable, professional home repairs and improvements. What started as a one-person operation has grown into a trusted team of skilled professionals, but we've never lost our commitment to treating every customer like family.</p>
-                    
-                    <p>Living in Virginia Beach means dealing with unique challenges – from salt air that accelerates wear on outdoor fixtures to hurricane season preparations. We understand these local conditions and how they affect your home. That's why so many of our customers call us first when they need repairs done right.</p>
-                    
-                    <p>Whether it's a quick fix that takes 30 minutes or a complex project that requires multiple visits, we approach every job with the same level of care and attention to detail. Your satisfaction isn't just our goal – it's how we've built our reputation in this community.</p>
-                </div>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-number">8+</div>
-                    <h3>Years Serving Virginia Beach</h3>
-                    <p>Deep local knowledge of common home issues and building practices in our coastal environment.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-number">24/7</div>
-                    <h3>Emergency Response</h3>
-                    <p>Home emergencies don't wait for business hours. Neither do we. Call anytime for urgent repairs.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-number">100%</div>
-                    <h3>Licensed & Insured</h3>
-                    <p>Fully licensed, bonded, and insured for your complete peace of mind and protection.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-number">✓</div>
-                    <h3>Satisfaction Guaranteed</h3>
-                    <p>We stand behind our work with a comprehensive guarantee. Not happy? We'll make it right.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <p class="faq-intro">Get answers to the most common questions Virginia Beach homeowners ask about our handyman services.</p>
-            
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>How quickly can you respond to emergency repairs?</h3>
-                    <p>For true emergencies like burst pipes or electrical hazards, we typically arrive within 2-4 hours. For urgent but non-dangerous issues, same-day service is usually available. We understand that some problems can't wait, especially when they affect your family's safety or comfort.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Do you provide free estimates?</h3>
-                    <p>Yes, we provide free estimates for all non-emergency work. For smaller jobs under $200, we can often give you an accurate quote over the phone. For larger projects, we'll schedule a convenient time to visit your home and provide a detailed written estimate at no charge.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What areas of Virginia Beach do you serve?</h3>
-                    <p>We serve all of Virginia Beach, including Oceanfront, Hilltop, Kempsville, Princess Anne, and surrounding neighborhoods. Our central location allows us to respond quickly throughout the city. We also serve nearby areas in Chesapeake and Norfolk when scheduling permits.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Are you licensed and insured?</h3>
-                    <p>Absolutely. We're fully licensed as a home improvement contractor in Virginia, bonded, and carry comprehensive liability insurance. We can provide proof of insurance and licensing upon request. This protects both you and us in the unlikely event something goes wrong.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What if I'm not satisfied with the work?</h3>
-                    <p>Your satisfaction is guaranteed. If you're not completely happy with our work, we'll return to fix any issues at no additional charge. If we still can't meet your expectations, we'll refund your money. That's how confident we are in the quality of our work.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can you handle multiple small jobs in one visit?</h3>
-                    <p>Definitely! We call it our "honey-do list" service. Many customers save up several small tasks – fixing squeaky hinges, hanging pictures, replacing light fixtures – and we tackle them all in one efficient visit. This saves you time and money compared to separate service calls.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Do you work weekends and evenings?</h3>
-                    <p>Yes, we offer flexible scheduling including evenings and weekends to accommodate your busy schedule. Weekend appointments are available for both emergency and non-emergency work. Just let us know what times work best for you.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What payment methods do you accept?</h3>
-                    <p>We accept cash, checks, and all major credit cards for your convenience. For larger projects, we can discuss payment plans. Payment is typically due upon completion of work, and we'll always discuss costs upfront so there are never any surprises.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>How do I know if a job is too big for a handyman?</h3>
-                    <p>Great question! We handle most home repairs and improvements, but for major electrical work requiring permits, structural changes, or large plumbing projects, we'll refer you to specialized contractors we trust. We're always honest about whether we're the right fit for your project.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Do you clean up after completing work?</h3>
-                    <p>Always. We believe leaving your home cleaner than we found it is part of professional service. We'll clean up all debris, protect your floors and furniture during work, and do a final walkthrough with you to ensure everything meets your standards.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can you work on older homes with unique challenges?</h3>
-                    <p>Virginia Beach has many beautiful older homes, and we love working on them. Whether it's dealing with plaster walls, older electrical systems, or unique architectural features, our experience with homes of all ages helps us find solutions that work with your home's character.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What should I do to prepare for your visit?</h3>
-                    <p>Just clear the work area if possible and make sure we can access the spaces where work needs to be done. If you have pets, please let us know so we can take appropriate precautions. We'll bring all necessary tools and materials unless we've discussed otherwise.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Do you offer any warranties on your work?</h3>
-                    <p>Yes, all our work comes with a satisfaction guarantee, and we provide specific warranties based on the type of work performed. For example, drywall repairs are warranted for one year, and furniture assembly comes with a 90-day guarantee. We'll explain the warranty terms for your specific job.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>How far in advance do I need to schedule non-emergency work?</h3>
-                    <p>For regular maintenance and improvement projects, we can usually schedule within 3-5 business days. During busy seasons (spring and fall), it might take a bit longer. For time-sensitive projects, just let us know and we'll do our best to accommodate your timeline.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Why should I hire a professional handyman instead of doing it myself?</h3>
-                    <p>While DIY can be rewarding, professional work saves you time, ensures safety, and often costs less than you might think when you factor in tools, materials, and the value of your time. Plus, our experience means we can spot potential problems before they become expensive repairs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-background">
-            <div class="contact-image-placeholder">
-                <span class="image-label">Happy Customer with Completed Project<br>1920x800px</span>
-            </div>
-            <div class="contact-overlay"></div>
-        </div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Get Started Today</span>
-                <h2 class="section-title">Ready for Professional<br><span class="accent-text">Home Solutions?</span></h2>
-                <p class="section-subtitle">Don't let home repairs pile up. Get expert help from Virginia Beach's most trusted handyman service. Fast response, fair pricing, guaranteed results.</p>
-            </div>
-            
-            <div class="contact-methods">
-                <div class="contact-card primary">
-                    <div class="contact-icon">📞</div>
-                    <h3>Call for Immediate Help</h3>
-                    <p>Speak with a professional right now</p>
-                    <a href="tel:(877) 478-2959" class="contact-link">(877) 478-2959</a>
-                    <span class="contact-availability">24/7 Emergency • 7 AM-8 PM Regular Hours</span>
-                    <a href="tel:(877) 478-2959" class="btn btn-primary btn-large">
-                        <span class="btn-icon">📞</span>
-                        <span>Call Now</span>
-                    </a>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email Your Project</h3>
-                    <p>Send photos and get detailed estimates</p>
-                    <a href="mailto:info@bobsjobshandyman.com" class="contact-link">info@bobsjobshandyman.com</a>
-                    <span class="contact-availability">Responses within 2 hours during business hours</span>
-                    <a href="mailto:info@bobsjobshandyman.com?subject=Project Estimate Request" class="btn btn-outline">
-                        <span class="btn-icon">📧</span>
-                        <span>Send Email</span>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="quick-estimate-form" id="estimate">
-                <h3>Get Your Free Estimate in Minutes</h3>
-                <p>Tell us about your project and we'll provide an honest, upfront estimate with no hidden fees or surprises.</p>
-                
-                <form class="estimate-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service">What do you need help with?</label>
-                        <select id="service" name="service" required>
-                            <option value="">Select a service...</option>
-                            <option value="emergency">Emergency Repair</option>
-                            <option value="furniture">Furniture Assembly</option>
-                            <option value="drywall">Drywall Repair</option>
-                            <option value="toilet">Toilet Installation/Repair</option>
-                            <option value="door">Door Repair/Installation</option>
-                            <option value="ceiling-fan">Ceiling Fan Installation</option>
-                            <option value="other">Other (describe below)</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="description">Project Description</label>
-                        <textarea id="description" name="description" rows="4" placeholder="Describe your project in detail. The more information you provide, the more accurate our estimate will be."></textarea>
-                    </div>
-                    
-                    <div class="form-group urgency">
-                        <label>How urgent is this project?</label>
-                        <div class="urgency-options">
-                            <label class="urgency-option">
-                                <input type="radio" name="urgency" value="emergency">
-                                <span class="urgency-label emergency">⚡ Emergency (ASAP)</span>
-                            </label>
-                            <label class="urgency-option">
-                                <input type="radio" name="urgency" value="soon">
-                                <span class="urgency-label soon">📅 This Week</span>
-                            </label>
-                            <label class="urgency-option">
-                                <input type="radio" name="urgency" value="flexible">
-                                <span class="urgency-label flexible">📆 Flexible Timing</span>
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-large btn-full">
-                        <span class="btn-icon">📋</span>
-                        <span>Get Free Estimate</span>
-                    </button>
-                    
-                    <div class="form-note">
-                        <p>🔒 Your information is secure and will never be shared. We'll contact you within 1 hour during business hours.</p>
-                    </div>
-                </form>
-            </div>
-            
-            <div class="trust-section">
-                <h3>Why Virginia Beach Chooses Bob's Jobs</h3>
-                <div class="trust-stats">
-                    <div class="trust-stat">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Happy Customers</div>
-                    </div>
-                    <div class="trust-stat">
-                        <div class="stat-number">4.9</div>
-                        <div class="stat-label">Star Rating</div>
-                    </div>
-                    <div class="trust-stat">
+                <h1 class="hero-title">
+                    Professional Home Repairs
+                    <span class="accent">Done Right, Every Time</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Expert handyman services Virginia Beach homeowners trust. From emergency repairs to home improvements, we handle it all with skill, speed, and professionalism.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
                         <div class="stat-number">8+</div>
-                        <div class="stat-label">Years Trusted</div>
+                        <div class="stat-label">Years Experience</div>
                     </div>
-                    <div class="trust-stat">
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Emergency Service</div>
+                    </div>
+                    <div class="stat">
                         <div class="stat-number">100%</div>
                         <div class="stat-label">Satisfaction Rate</div>
                     </div>
                 </div>
-                
-                <div class="guarantees">
-                    <div class="guarantee-item">
-                        <div class="guarantee-icon">💰</div>
-                        <h4>Transparent Pricing</h4>
-                        <p>No hidden fees, no surprise charges. You'll know exactly what you're paying before we start.</p>
-                    </div>
-                    <div class="guarantee-item">
-                        <div class="guarantee-icon">⚡</div>
-                        <h4>Fast Response</h4>
-                        <p>Emergency calls answered 24/7. Regular appointments scheduled within 3-5 business days.</p>
-                    </div>
-                    <div class="guarantee-item">
-                        <div class="guarantee-icon">🏆</div>
-                        <h4>Quality Guaranteed</h4>
-                        <p>All work backed by our satisfaction guarantee. Not happy? We'll make it right or refund your money.</p>
+                <div class="hero-actions">
+                    <a href="tel:(877) 478-2959" class="btn btn-primary">
+                        <span class="btn-icon">📞</span>
+                        <span>Call Now: (877) 478-2959</span>
+                    </a>
+                    <div class="hero-features">
+                        <span class="feature">⚡ Fast Response</span>
+                        <span class="feature">🛡️ Licensed & Insured</span>
+                        <span class="feature">✅ Guaranteed Work</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Modern Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Services</div>
+                <h2 class="section-title">Expert Home Solutions</h2>
+                <p class="section-subtitle">
+                    Professional handyman services that Virginia Beach homeowners rely on for quality, speed, and reliability.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-header">
+                        <div class="service-icon emergency">⚡</div>
+                        <div class="service-badge">24/7 Available</div>
+                    </div>
+                    <h3>Emergency Repairs</h3>
+                    <p>Fast response for urgent home repairs. Burst pipes, electrical issues, storm damage - we're here when you need us most.</p>
+                    <ul class="service-features">
+                        <li>2-4 hour emergency response</li>
+                        <li>Available nights & weekends</li>
+                        <li>All emergency types covered</li>
+                    </ul>
+                    <a href="tel:(877) 478-2959" class="service-cta">Emergency Call</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🔧</div>
+                        <div class="service-badge">Expert Assembly</div>
+                    </div>
+                    <h3>Furniture Assembly</h3>
+                    <p>Professional furniture assembly for all brands. No frustration, no missing pieces - just perfectly assembled furniture.</p>
+                    <ul class="service-features">
+                        <li>All furniture brands</li>
+                        <li>Tools & hardware included</li>
+                        <li>90-day assembly warranty</li>
+                    </ul>
+                    <a href="tel:(877) 478-2959" class="service-cta">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🎨</div>
+                        <div class="service-badge">Seamless Repair</div>
+                    </div>
+                    <h3>Drywall Repair</h3>
+                    <p>Expert drywall patching and repair. Holes, cracks, and damage restored to like-new condition with perfect matching.</p>
+                    <ul class="service-features">
+                        <li>Color & texture matching</li>
+                        <li>Any size hole or crack</li>
+                        <li>Same-day small repairs</li>
+                    </ul>
+                    <a href="tel:(877) 478-2959" class="service-cta">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🚽</div>
+                        <div class="service-badge">Plumbing Pro</div>
+                    </div>
+                    <h3>Toilet Installation</h3>
+                    <p>Professional toilet installation and repair. Proper installation, water efficiency, and reliable long-term performance.</p>
+                    <ul class="service-features">
+                        <li>All toilet types & brands</li>
+                        <li>Water-saving upgrades</li>
+                        <li>Proper sealing guaranteed</li>
+                    </ul>
+                    <a href="tel:(877) 478-2959" class="service-cta">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🚪</div>
+                        <div class="service-badge">Perfect Fit</div>
+                    </div>
+                    <h3>Door Repair</h3>
+                    <p>Door repair and installation services. Fix sticking doors, damaged frames, and security issues with precision work.</p>
+                    <ul class="service-features">
+                        <li>Interior & exterior doors</li>
+                        <li>Frame repair & adjustment</li>
+                        <li>Weather sealing included</li>
+                    </ul>
+                    <a href="tel:(877) 478-2959" class="service-cta">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">💨</div>
+                        <div class="service-badge">Electrical Safe</div>
+                    </div>
+                    <h3>Ceiling Fan Installation</h3>
+                    <p>Safe ceiling fan installation with proper wiring and mounting. Quiet operation and perfect balance guaranteed.</p>
+                    <ul class="service-features">
+                        <li>Electrical safety certified</li>
+                        <li>Perfect balance & quiet</li>
+                        <li>Light integration available</li>
+                    </ul>
+                    <a href="tel:(877) 478-2959" class="service-cta">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">About Us</div>
+                    <h2>Why Virginia Beach Trusts Bob's Jobs</h2>
+                    <p>
+                        Since 2015, we've been Virginia Beach's go-to handyman service for reliable, professional home repairs and improvements. Our commitment to quality work, fair pricing, and exceptional customer service has made us the trusted choice for homeowners throughout the area.
+                    </p>
+                    <p>
+                        We understand the unique challenges of coastal living - from salt air effects to hurricane preparations. Our local expertise ensures your repairs are done right the first time, every time.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Response</h3>
+                        <p>Emergency calls answered 24/7. Regular appointments scheduled within 3-5 business days.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Transparent Pricing</h3>
+                        <p>No hidden fees or surprises. You'll know exactly what you're paying before we start work.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Quality Guaranteed</h3>
+                        <p>All work backed by our satisfaction guarantee. Not happy? We'll make it right.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">FAQ</div>
+                <h2 class="section-title">Common Questions</h2>
+                <p class="section-subtitle">
+                    Get answers to the most frequently asked questions about our handyman services.
+                </p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How quickly can you respond to emergency repairs?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p>For true emergencies like burst pipes or electrical hazards, we typically arrive within 2-4 hours. For urgent but non-dangerous issues, same-day service is usually available. We understand that some problems can't wait, especially when they affect your family's safety or comfort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you provide free estimates?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p>Yes, we provide free estimates for all non-emergency work. For smaller jobs under $200, we can often give you an accurate quote over the phone. For larger projects, we'll schedule a convenient time to visit your home and provide a detailed written estimate at no charge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What areas of Virginia Beach do you serve?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p>We serve all of Virginia Beach, including Oceanfront, Hilltop, Kempsville, Princess Anne, and surrounding neighborhoods. Our central location allows us to respond quickly throughout the city. We also serve nearby areas in Chesapeake and Norfolk when scheduling permits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Are you licensed and insured?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p>Absolutely. We're fully licensed as a home improvement contractor in Virginia, bonded, and carry comprehensive liability insurance. We can provide proof of insurance and licensing upon request. This protects both you and us in the unlikely event something goes wrong.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can you handle multiple small jobs in one visit?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p>Definitely! We call it our "honey-do list" service. Many customers save up several small tasks – fixing squeaky hinges, hanging pictures, replacing light fixtures – and we tackle them all in one efficient visit. This saves you time and money compared to separate service calls.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What if I'm not satisfied with the work?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p>Your satisfaction is guaranteed. If you're not completely happy with our work, we'll return to fix any issues at no additional charge. If we still can't meet your expectations, we'll refund your money. That's how confident we are in the quality of our work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Call-to-Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Don't let home repairs pile up. Call Virginia Beach's most trusted handyman service and get your projects done right.</p>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <strong>500+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>4.9★</strong>
+                        <span>Average Rating</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>24/7</strong>
+                        <span>Emergency Service</span>
+                    </div>
+                </div>
+                <a href="tel:(877) 478-2959" class="btn btn-primary btn-large">
+                    <span class="btn-icon">📞</span>
+                    <span>Call Now: (877) 478-2959</span>
+                </a>
+                <p class="cta-note">
+                    Free estimates • Licensed & Insured • Satisfaction Guaranteed
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Bob's Jobs Handyman. All rights reserved. Serving Virginia Beach, VA with professional handyman services.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Bob's Jobs Handyman</h3>
+                    <p>Professional handyman services in Virginia Beach, VA since 2015.</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:(877) 478-2959" class="footer-phone">
+                        <span class="phone-icon">📞</span>
+                        <span>(877) 478-2959</span>
+                    </a>
+                    <p class="footer-hours">24/7 Emergency Service Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bob's Jobs Handyman. All rights reserved. Serving Virginia Beach, VA with professional handyman services.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- FAQ Accordion JavaScript -->
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = '0px';
+                    item.querySelector('.faq-icon').textContent = '+';
+                }
+            });
+            
+            // Toggle current FAQ
+            if (faqItem.classList.contains('active')) {
+                faqItem.classList.remove('active');
+                answer.style.maxHeight = '0px';
+                icon.textContent = '+';
+            } else {
+                faqItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '−';
+            }
+        }
+
+        // Smooth scroll behavior for internal links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
