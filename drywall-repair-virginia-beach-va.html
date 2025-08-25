@@ -22,7 +22,7 @@
         /* Force process steps styling */
         .process-steps {
             display: grid !important;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+            grid-template-columns: repeat(2, 1fr) !important;
             gap: 2rem !important;
             max-width: 1000px !important;
             margin: 0 auto !important;
@@ -51,7 +51,7 @@
         /* Force brands grid styling (texture types) */
         .brands-grid {
             display: grid !important;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+            grid-template-columns: repeat(3, 1fr) !important;
             gap: 1.5rem !important;
         }
         .brand-card {
@@ -67,7 +67,14 @@
             color: #00D4AA !important;
             margin-bottom: 0.75rem !important;
         }
-        .service-cards-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important; gap: 2rem !important; }
+        .services-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 2rem !important; }
+        .service-cards-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 2rem !important; }
+        
+        @media (max-width: 768px) {
+            .services-grid { grid-template-columns: 1fr !important; }
+            .process-steps { grid-template-columns: 1fr !important; }
+            .brands-grid { grid-template-columns: 1fr !important; }
+        }
         .service-card { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 2rem !important; }
         .service-details-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; gap: 2rem !important; }
         .service-detail-box { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 2rem !important; }
