@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #1a1f36;
+            color: white;
+        }
+        
+        .navbar {
+            background: red;
+            padding: 20px;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-brand h1 {
+            margin: 0;
+            color: white;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            background: yellow;
+            padding: 10px;
+        }
+        
+        .nav-dropdown-container {
+            position: relative;
+        }
+        
+        .nav-link {
+            background: green;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 4px;
+        }
+        
+        .nav-dropdown {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #2a3458;
+            border: 2px solid white;
+            padding: 10px;
+            min-width: 200px;
+            gap: 5px;
+            z-index: 100;
+        }
+        
+        .nav-phone {
+            background: blue;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Bob's Jobs</h1>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-dropdown-container">
+                    <a href="#services" class="nav-link">Services</a>
+                    <div class="nav-dropdown">
+                        <a href="emergency-repairs-virginia-beach-va.html" class="nav-link">Emergency Repairs</a>
+                        <a href="furniture-assembly-virginia-beach-va.html" class="nav-link">Furniture Assembly</a>
+                        <a href="drywall-repair-virginia-beach-va.html" class="nav-link">Drywall Repair</a>
+                        <a href="plumbing-repairs-virginia-beach-va.html" class="nav-link">Plumbing Repairs</a>
+                        <a href="electrical-work-virginia-beach-va.html" class="nav-link">Electrical Work</a>
+                        <a href="home-maintenance-virginia-beach-va.html" class="nav-link">Home Maintenance</a>
+                        <a href="carpentry-services-virginia-beach-va.html" class="nav-link">Carpentry Services</a>
+                    </div>
+                </div>
+                <a href="about-us-virginia-beach-handyman.html" class="nav-link">About Us</a>
+                <a href="faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
+            </div>
+            <a href="tel:(877) 478-2959" class="nav-phone">(877) 478-2959</a>
+        </div>
+    </nav>
+    
+    <div style="padding: 100px 20px; text-align: center;">
+        <h2>Navigation Test</h2>
+        <p>You should see above:</p>
+        <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+            <li>Red navigation bar</li>
+            <li>Yellow menu background</li>
+            <li>Green buttons for: Services, About Us, FAQ</li>
+            <li>White-bordered dropdown with 7 service links</li>
+            <li>Blue phone button</li>
+        </ul>
+    </div>
+</body>
+</html>

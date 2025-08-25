@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Bob's Jobs Handyman Virginia Beach - Local handyman company since 2015 serving Virginia Beach, Chesapeake, Norfolk. Licensed, insured, trusted by thousands of homeowners.">
+    <meta name="keywords" content="about Virginia Beach handyman, local handyman Virginia Beach, Bob's Jobs Handyman history, Virginia Beach home repair company, licensed handyman Virginia Beach, trusted handyman services Virginia Beach">
+    <meta name="google-site-verification" content="qy_2Hsc19SoI1qjfC0GAuCZ1Qi-EOZrjD3VtBY-m0Y8" />
+    <title>About Us - Virginia Beach Handyman | Bob's Jobs Local History & Team</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline for fast loading -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #1a1f36; color: #ffffff; overflow-x: hidden; }
+        .hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #1a1f36 0%, #2a3458 100%); }
+        .navbar { display: flex !important; position: fixed !important; top: 0 !important; width: 100% !important; z-index: 1000 !important; background: rgba(26, 31, 54, 0.95) !important; backdrop-filter: blur(10px) !important; }
+        .nav-container { display: flex !important; align-items: center !important; justify-content: space-between !important; max-width: 1200px !important; margin: 0 auto !important; padding: 1rem 2rem !important; }
+        .nav-brand h1 { color: #00D4AA !important; font-size: 1.5rem !important; margin: 0 !important; }
+        .nav-menu { display: flex !important; gap: 2rem !important; align-items: center !important; }
+        .nav-link { color: white !important; text-decoration: none !important; transition: color 0.3s !important; }
+        .nav-link:hover, .nav-link.active { color: #00D4AA !important; }
+        .nav-phone { background: #00D4AA !important; color: #1a1f36 !important; padding: 0.5rem 1rem !important; border-radius: 6px !important; text-decoration: none !important; }
+        
+        /* Fix spacing for About Us page content */
+        .container { padding: 2rem 1rem !important; }
+        .section { margin-bottom: 3rem !important; }
+        .timeline-item { margin-bottom: 2.5rem !important; }
+        .year { font-size: 1.2rem !important; font-weight: 600 !important; color: #00D4AA !important; margin-bottom: 1rem !important; }
+        .timeline-content h3 { margin-bottom: 1rem !important; font-size: 1.5rem !important; }
+        .timeline-content p { margin-bottom: 1.5rem !important; line-height: 1.6 !important; }
+        .about-content { padding-top: 100px !important; }
+        h2 { margin-bottom: 2rem !important; }
+        p { margin-bottom: 1.5rem !important; }
+        
+        /* FORCE override all grid layouts for About Us content - HIGHEST PRIORITY */
+        section.services .container .story-content { display: block !important; grid-template-columns: none !important; }
+        section.services .container .story-section { 
+            display: block !important; 
+            margin-bottom: 3rem !important; 
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            grid-column: unset !important;
+            width: 100% !important;
+        }
+        section.services .container .story-year { 
+            font-size: 2rem !important; 
+            font-weight: 700 !important; 
+            color: #00D4AA !important; 
+            margin-bottom: 1.5rem !important; 
+            display: block !important;
+        }
+        section.services .container .story-section h3 {
+            font-size: 1.8rem !important;
+            color: #ffffff !important;
+            margin-bottom: 1rem !important;
+        }
+        section.services .container .story-section p {
+            color: rgba(255, 255, 255, 0.9) !important;
+            line-height: 1.7 !important;
+            margin-bottom: 1.5rem !important;
+            font-size: 1rem !important;
+        }
+        /* Kill all service grids and cards on About page */
+        .services-grid, .service-cards, .service-cards-grid { display: none !important; }
+        .service-card { display: none !important; }
+        
+        /* Style the story-timeline section like the test page */
+        .story-timeline {
+            background: #1a1f36 !important;
+            padding: 60px 0 !important;
+        }
+        .story-timeline .container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+        .story-timeline .story-content {
+            display: block !important;
+        }
+        .story-timeline .story-section {
+            margin-bottom: 40px !important;
+            padding: 20px !important;
+            background: rgba(255,255,255,0.05) !important;
+            border-radius: 8px !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .story-timeline .story-year {
+            font-size: 2rem !important;
+            font-weight: bold !important;
+            color: #00D4AA !important;
+            margin-bottom: 15px !important;
+            display: block !important;
+        }
+        .story-timeline h3 {
+            font-size: 1.8rem !important;
+            margin-bottom: 15px !important;
+            color: #ffffff !important;
+        }
+        .story-timeline p {
+            margin-bottom: 15px !important;
+            line-height: 1.6 !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+        
+        /* Fix About Features to show 1 per row for better readability */
+        .about-features {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+            margin-top: 2rem !important;
+            max-width: 800px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        
+        /* Fix the "What Makes Us" section to show 1 per row for better readability */
+        .process-steps {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+            max-width: 800px !important;
+            margin: 0 auto !important;
+        }
+    </style>
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=2.8">
+    
+    <!-- About Us Page Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Bob's Jobs Handyman",
+        "description": "Virginia Beach's trusted handyman service since 2015, providing professional home repairs, emergency services, furniture assembly, and drywall repair to local homeowners.",
+        "foundingDate": "2015",
+        "founder": {
+          "@type": "Person",
+          "name": "Bob"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Virginia Beach",
+          "addressRegion": "VA",
+          "addressCountry": "US"
+        },
+        "areaServed": ["Virginia Beach, VA", "Chesapeake, VA", "Norfolk, VA"],
+        "telephone": "(877) 478-2959",
+        "url": "https://bobsjobshandyman.com"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Bob's Jobs</a></h1>
+                <span>Handyman</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html#services" class="nav-link">Services</a>
+                <div class="nav-dropdown">
+                    <a href="emergency-repairs-virginia-beach-va.html" class="nav-link">Emergency Repairs</a>
+                    <a href="furniture-assembly-virginia-beach-va.html" class="nav-link">Furniture Assembly</a>
+                    <a href="drywall-repair-virginia-beach-va.html" class="nav-link">Drywall Repair</a>
+                </div>
+                <a href="about-us-virginia-beach-handyman.html" class="nav-link active">About</a>
+                <a href="faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
+            </div>
+            <a href="tel:(877) 478-2959" class="nav-phone">
+                <span class="phone-icon">📞</span>
+                <span>(877) 478-2959</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🏠</span>
+                    <span>Local Virginia Beach Company</span>
+                </div>
+                <h1 class="hero-title">
+                    About Bob's Jobs Handyman
+                    <span class="accent">Virginia Beach's Trusted Home Repair Team</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Since 2015, Bob's Jobs Handyman has been Virginia Beach's go-to local handyman service, built on trust, expertise, and genuine care for our community. What started as one person's passion for helping neighbors has grown into Virginia Beach's most respected home repair company, serving thousands of satisfied customers with <a href="emergency-repairs-virginia-beach-va.html">emergency repairs</a>, <a href="furniture-assembly-virginia-beach-va.html">furniture assembly</a>, and <a href="drywall-repair-virginia-beach-va.html">drywall repair</a> services.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">2015</div>
+                        <div class="stat-label">Founded</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Years Local</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3000+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="tel:(877) 478-2959" class="btn btn-primary">
+                        <span class="btn-icon">📞</span>
+                        <span>Call Now: (877) 478-2959</span>
+                    </a>
+                    <div class="hero-features">
+                        <span class="feature">🏠 Local Virginia Beach</span>
+                        <span class="feature">⭐ 4.9/5 Rating</span>
+                        <span class="feature">🛡️ Licensed & Insured</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-timeline">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Story</div>
+                <h2 class="section-title">How Bob's Jobs Became Virginia Beach's Most Trusted Handyman</h2>
+                <p class="section-subtitle">
+                    From humble beginnings to becoming Virginia Beach's premier handyman service, our story is one of community, craftsmanship, and unwavering commitment to helping our neighbors maintain their homes.
+                </p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-section">
+                    <div class="story-year">2015</div>
+                    <h3>The Beginning in Virginia Beach</h3>
+                    <p>Bob's Jobs Handyman started with a simple mission: provide honest, reliable handyman services to Virginia Beach homeowners. Founded by Bob, a lifelong Virginia Beach resident with over 15 years of construction and home repair experience, the company began as a one-person operation helping neighbors with small home repairs and improvements.</p>
+                    <p>Understanding the unique challenges of coastal living in Virginia Beach - from salt air corrosion to hurricane preparedness - Bob focused on building expertise in the specific needs of Tidewater homes. Word spread quickly through local neighborhoods about the quality work and fair pricing.</p>
+                </div>
+
+                <div class="story-section">
+                    <div class="story-year">2017</div>
+                    <h3>Growing with Virginia Beach</h3>
+                    <p>By 2017, demand for reliable handyman services in Virginia Beach had grown so much that Bob's Jobs expanded to include <a href="emergency-repairs-virginia-beach-va.html">24/7 emergency repair services</a>. Virginia Beach homeowners needed someone they could call when storms caused damage or when urgent repairs couldn't wait for regular business hours.</p>
+                    <p>We also began specializing in <a href="furniture-assembly-virginia-beach-va.html">professional furniture assembly</a>, recognizing that busy Virginia Beach families needed help with the increasingly complex furniture from online retailers. Our systematic approach and professional tools made us the go-to choice for IKEA assembly and other furniture installation needs.</p>
+                </div>
+
+                <div class="story-section">
+                    <div class="story-year">2019</div>
+                    <h3>Mastering Virginia Beach Home Challenges</h3>
+                    <p>As our experience grew, we developed specialized expertise in <a href="drywall-repair-virginia-beach-va.html">drywall repair and texture matching</a> - crucial skills for Virginia Beach homes dealing with settling, humidity, and occasional storm damage. Our perfect texture and paint matching became legendary among local homeowners.</p>
+                    <p>We also became certified for lead-safe work practices, essential for Virginia Beach's many historic homes. Our team learned to work with the unique construction styles found throughout Virginia Beach neighborhoods, from Oceanfront condos to suburban homes in Kempsville and Princess Anne.</p>
+                </div>
+
+                <div class="story-section">
+                    <div class="story-year">2024</div>
+                    <h3>Virginia Beach's Most Trusted Team</h3>
+                    <p>Today, Bob's Jobs Handyman is proud to be Virginia Beach's most trusted handyman service. We've completed over 3,000 projects for satisfied customers throughout Virginia Beach, Chesapeake, and Norfolk. Our reputation for quality work, fair pricing, and exceptional customer service has made us the first call for thousands of local families.</p>
+                    <p>What hasn't changed is our commitment to treating every customer like a neighbor and every project like it's our own home. We're still local, still family-owned, and still dedicated to being Virginia Beach's most reliable handyman service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">Our Team</div>
+                    <h2>Meet Your Virginia Beach Handyman Team</h2>
+                    <p>
+                        Our team of skilled craftsmen and customer service professionals share a common commitment: providing exceptional handyman services that Virginia Beach homeowners can trust. Every team member is thoroughly vetted, background-checked, and trained in our high standards of workmanship and customer care.
+                    </p>
+                    <p>
+                        What sets our Virginia Beach handyman team apart is our deep local knowledge. We've worked in every neighborhood from Oceanfront to Pungo, and we understand the specific challenges that coastal living presents. From selecting materials that withstand salt air to knowing local building codes and permit requirements, our experience shows in every project.
+                    </p>
+                    <p>
+                        Whether you need <a href="emergency-repairs-virginia-beach-va.html">emergency storm damage repair</a>, professional <a href="furniture-assembly-virginia-beach-va.html">furniture assembly service</a>, or expert <a href="drywall-repair-virginia-beach-va.html">drywall repair</a>, our team brings the right combination of technical skill and local expertise to get the job done right.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🔧</div>
+                        <h3>Licensed Professionals</h3>
+                        <p>Every team member holds proper licensing for Virginia Beach home improvement work, with specialized certifications for electrical, plumbing, and lead-safe practices.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Local Expertise</h3>
+                        <p>Years of experience working specifically in Virginia Beach homes means we understand coastal challenges, neighborhood styles, and local building requirements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❤️</div>
+                        <h3>Community Focused</h3>
+                        <p>We're not just your handyman service - we're your neighbors. We live here, work here, and care about maintaining Virginia Beach's home values and community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Values</div>
+                <h2 class="section-title">What Drives Our Virginia Beach Handyman Service</h2>
+                <p class="section-subtitle">
+                    Our core values guide every interaction with Virginia Beach homeowners and every project we complete.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="stars">🤝</span>
+                        <span class="rating-text">Integrity</span>
+                    </div>
+                    <blockquote>
+                        We believe in honest communication, transparent pricing, and doing what we say we'll do. Virginia Beach homeowners trust us because we've earned that trust through consistent, reliable service over nearly a decade.
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="stars">🏠</span>
+                        <span class="rating-text">Quality</span>
+                    </div>
+                    <blockquote>
+                        Every project reflects our reputation in the Virginia Beach community. We take pride in workmanship that lasts, using quality materials and proven techniques that stand up to coastal conditions.
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="stars">⚡</span>
+                        <span class="rating-text">Responsiveness</span>
+                    </div>
+                    <blockquote>
+                        When Virginia Beach homeowners need help, we respond quickly. Our 24/7 emergency service and prompt scheduling for regular projects mean you don't have to wait when your home needs attention.
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="stars">🎯</span>
+                        <span class="rating-text">Expertise</span>
+                    </div>
+                    <blockquote>
+                        We continuously improve our skills and stay current with best practices. From new tools and techniques to understanding Virginia Beach's evolving building codes, we invest in being the best at what we do.
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="stars">💰</span>
+                        <span class="rating-text">Fair Pricing</span>
+                    </div>
+                    <blockquote>
+                        Quality work doesn't have to break the bank. We provide competitive, transparent pricing that reflects the value we deliver to Virginia Beach homeowners without hidden fees or surprise charges.
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="stars">🏆</span>
+                        <span class="rating-text">Community</span>
+                    </div>
+                    <blockquote>
+                        Virginia Beach is our home too. We're invested in maintaining property values, supporting local businesses, and being the kind of neighbors we'd want living next door to us.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Why Choose Bob's Jobs</div>
+                <h2 class="section-title">What Makes Us Virginia Beach's Premier Handyman Service</h2>
+                <p class="section-subtitle">
+                    After nearly a decade serving Virginia Beach homeowners, we've learned what matters most: reliability, quality, and treating every customer like family.
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">🏠</div>
+                    <h3>Local Virginia Beach Knowledge</h3>
+                    <p>We know Virginia Beach homes inside and out. From Oceanfront high-rises to Kempsville ranches, we understand the unique challenges of coastal living and have the expertise to address them properly.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">⚡</div>
+                    <h3>24/7 Emergency Response</h3>
+                    <p>Home emergencies don't wait for business hours. Our <a href="emergency-repairs-virginia-beach-va.html">24/7 emergency service</a> ensures Virginia Beach homeowners always have help when they need it most.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">🛡️</div>
+                    <h3>Licensed & Fully Insured</h3>
+                    <p>Complete peace of mind with full licensing, bonding, and comprehensive liability insurance. We protect both our customers and our team on every Virginia Beach project.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">⭐</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Over 3,000 completed projects and countless satisfied Virginia Beach customers speak for themselves. Our 4.9-star rating reflects our commitment to excellence in every job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience the Bob's Jobs Difference?</h2>
+                <p>Join thousands of satisfied Virginia Beach homeowners who trust Bob's Jobs for all their home repair and improvement needs.</p>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <strong>8+</strong>
+                        <span>Years Local</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>3000+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>4.9★</strong>
+                        <span>Average Rating</span>
+                    </div>
+                </div>
+                <a href="tel:(877) 478-2959" class="btn btn-primary btn-large">
+                    <span class="btn-icon">📞</span>
+                    <span>Call Your Local Team: (877) 478-2959</span>
+                </a>
+                <p class="cta-note">
+                    Local Virginia Beach Company • Licensed & Insured • Satisfaction Guaranteed
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Bob's Jobs Handyman</h3>
+                    <p>Virginia Beach's trusted local handyman service since 2015.</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:(877) 478-2959" class="footer-phone">
+                        <span class="phone-icon">📞</span>
+                        <span>(877) 478-2959</span>
+                    </a>
+                    <p class="footer-hours">Serving Virginia Beach Since 2015</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bob's Jobs Handyman. All rights reserved. About Bob's Jobs - Virginia Beach's local handyman company providing emergency repairs, furniture assembly, drywall repair, and professional home services since 2015.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Accordion JavaScript -->
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = '0px';
+                    item.querySelector('.faq-icon').textContent = '+';
+                }
+            });
+            
+            // Toggle current FAQ
+            if (faqItem.classList.contains('active')) {
+                faqItem.classList.remove('active');
+                answer.style.maxHeight = '0px';
+                icon.textContent = '+';
+            } else {
+                faqItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '−';
+            }
+        }
+    </script>
+</body>
+</html>

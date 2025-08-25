@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Virginia Beach Handyman Questions Answered | Bob's Jobs</title>
+    <meta name="description" content="Get answers to frequently asked questions about handyman services in Virginia Beach VA. Pricing, scheduling, licensing, and more handyman FAQ answered.">
+    <meta name="keywords" content="Virginia Beach handyman FAQ, handyman questions, handyman pricing Virginia Beach, licensed handyman Virginia Beach, handyman services questions">
+    <meta name="google-site-verification" content="qy_2Hsc19SoI1qjfC0GAuCZ1Qi-EOZrjD3VtBY-m0Y8" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css?v=2.7" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline for fast loading -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #1a1f36; color: #ffffff; overflow-x: hidden; }
+        .hero { min-height: 60vh; display: flex; align-items: center; background: linear-gradient(135deg, #1a1f36 0%, #2a3458 100%); }
+        .faq-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 2rem !important; max-width: 900px !important; margin: 0 auto !important; }
+        .faq-category { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 2rem !important; }
+        .faq-item { background: rgba(255, 255, 255, 0.03) !important; border-radius: 8px !important; padding: 0 !important; margin-bottom: 3rem !important; overflow: visible !important; position: relative !important; min-height: auto !important; }
+        .faq-question { 
+            font-size: 1.1rem !important; 
+            font-weight: 600 !important; 
+            color: #00D4AA !important; 
+            margin-bottom: 0.75rem !important; 
+            cursor: pointer !important;
+            padding: 1rem !important;
+            background: rgba(255, 255, 255, 0.05) !important;
+            border-radius: 8px !important;
+            position: relative !important;
+            transition: all 0.3s ease !important;
+        }
+        .faq-question:hover {
+            background: rgba(0, 212, 170, 0.1) !important;
+        }
+        .faq-question::after {
+            content: '+' !important;
+            position: absolute !important;
+            right: 1rem !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            font-size: 1.5rem !important;
+            color: #00D4AA !important;
+        }
+        .faq-question.active::after {
+            content: '−' !important;
+        }
+        .faq-answer { 
+            color: rgba(255, 255, 255, 0.9) !important; 
+            line-height: 1.6 !important;
+            padding: 2rem !important;
+            background: rgba(255, 255, 255, 0.02) !important;
+            border-radius: 0 0 8px 8px !important;
+            margin-top: 0 !important;
+            margin-bottom: 2rem !important;
+            display: none;
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+            overflow-wrap: break-word !important;
+            word-break: break-word !important;
+            hyphens: auto !important;
+            position: relative !important;
+            z-index: 1 !important;
+            height: auto !important;
+            max-height: none !important;
+            overflow: visible !important;
+            white-space: normal !important;
+        }
+    </style>
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=2.7">
+    
+    <!-- FAQ Page Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do handyman services cost in Virginia Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Virginia Beach handyman rates vary by project type. Small repairs typically range from $75-200, medium projects $200-500, and larger jobs are quoted individually. We provide upfront pricing with no hidden fees. Emergency calls have a service charge but no price gouging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you licensed and insured in Virginia Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we're fully licensed as a home improvement contractor in Virginia, bonded, and carry comprehensive liability insurance. We can provide proof of insurance and licensing upon request. This protects both you and us during all handyman work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you respond to emergency repairs in Virginia Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For true emergencies like burst pipes or electrical hazards, we typically arrive within 2-4 hours. For urgent but non-dangerous issues, same-day service is usually available. We understand that some problems can't wait for your family's safety and comfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas of Virginia Beach do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve all of Virginia Beach including Oceanfront, Hilltop, Kempsville, Princess Anne, and surrounding neighborhoods. Our central location allows quick response throughout the city. We also serve nearby Chesapeake and Norfolk when scheduling permits."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Bob's Jobs</a></h1>
+                <span>Handyman</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html#services" class="nav-link">Services</a>
+                <div class="nav-dropdown">
+                    <a href="emergency-repairs-virginia-beach-va.html" class="nav-link">Emergency Repairs</a>
+                    <a href="furniture-assembly-virginia-beach-va.html" class="nav-link">Furniture Assembly</a>
+                    <a href="drywall-repair-virginia-beach-va.html" class="nav-link">Drywall Repair</a>
+                    <a href="plumbing-repairs-virginia-beach-va.html" class="nav-link">Plumbing Repairs</a>
+                    <a href="electrical-work-virginia-beach-va.html" class="nav-link">Electrical Work</a>
+                    <a href="home-maintenance-virginia-beach-va.html" class="nav-link">Home Maintenance</a>
+                    <a href="carpentry-services-virginia-beach-va.html" class="nav-link">Carpentry Services</a>
+                </div>
+                <a href="about-us-virginia-beach-handyman.html" class="nav-link">About Us</a>
+                <a href="faq-virginia-beach-handyman.html" class="nav-link active">FAQ</a>
+            </div>
+            <a href="tel:(877) 478-2959" class="nav-phone">
+                <span class="phone-icon">📞</span>
+                <span>Call Now</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">❓</span>
+                    <span>Frequently Asked Questions</span>
+                </div>
+                <h1 class="hero-title">
+                    Virginia Beach Handyman FAQ
+                    <span class="accent">Your Questions, Our Answers</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Get answers to the most common questions about handyman services in Virginia Beach VA. From pricing and scheduling to licensing and warranties, we've compiled everything you need to know about working with Bob's Jobs Handyman. <a href="about-us-virginia-beach-handyman.html">Learn more about our experienced team</a> and explore our comprehensive <a href="emergency-repairs-virginia-beach-va.html">emergency repair services</a>.
+                </p>
+                <div class="hero-actions">
+                    <a href="tel:(877) 478-2959" class="btn btn-primary">
+                        <span class="btn-icon">📞</span>
+                        <span>Call Now: (877) 478-2959</span>
+                    </a>
+                    <div class="hero-features">
+                        <span class="feature">❓ All Questions Answered</span>
+                        <span class="feature">📞 Free Consultations</span>
+                        <span class="feature">✅ Transparent Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Frequently Asked Questions</div>
+                <h2 class="section-title">Everything You Need to Know About Our Virginia Beach Handyman Services</h2>
+                <p class="section-subtitle">
+                    We've answered the most common questions about our handyman services in Virginia Beach VA. If you don't find your answer here, give us a call for personalized assistance.
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <!-- General Services FAQ -->
+                <div class="faq-category">
+                    <h3>🔧 General Handyman Services</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>What handyman services do you offer in Virginia Beach?</h3>
+                            <div class="faq-icon">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>We provide comprehensive handyman services including <a href="emergency-repairs-virginia-beach-va.html">emergency repairs</a>, <a href="plumbing-repairs-virginia-beach-va.html">plumbing repairs</a>, <a href="electrical-work-virginia-beach-va.html">electrical work</a>, <a href="drywall-repair-virginia-beach-va.html">drywall repair</a>, <a href="furniture-assembly-virginia-beach-va.html">furniture assembly</a>, <a href="carpentry-services-virginia-beach-va.html">carpentry services</a>, and <a href="home-maintenance-virginia-beach-va.html">home maintenance</a>. From small repairs to major home improvements, we handle projects of all sizes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you handle both interior and exterior work?</div>
+                        <div class="faq-answer">Yes, our Virginia Beach handyman services cover both interior and exterior projects. Interior work includes drywall repair, plumbing, electrical, carpentry, and furniture assembly. Exterior services include siding repair, gutter maintenance, deck work, and storm damage repair.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What's the smallest job you'll take on?</div>
+                        <div class="faq-answer">We handle projects of all sizes, from hanging a single picture frame to major home renovations. No job is too small for our Virginia Beach handyman team. We believe every home repair matters for your comfort and safety.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can you help with honey-do lists and multiple small tasks?</div>
+                        <div class="faq-answer">Absolutely! We specialize in tackling honey-do lists and multiple small repairs in one visit. This approach saves you time and money by handling several tasks during a single service call to your Virginia Beach home.</div>
+                    </div>
+                </div>
+
+                <!-- Pricing and Scheduling FAQ -->
+                <div class="faq-category">
+                    <h3>💰 Pricing and Scheduling</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How much do handyman services cost in Virginia Beach?</div>
+                        <div class="faq-answer">Our Virginia Beach handyman rates are competitive and transparent. Small repairs typically range from $75-200, medium projects $200-500, and larger jobs are quoted individually. We provide upfront pricing with no hidden fees or surprise charges.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you provide free estimates?</div>
+                        <div class="faq-answer">Yes, we provide free estimates for all non-emergency work. For smaller jobs under $200, we can often give accurate quotes over the phone. For larger projects, we'll schedule a convenient time to visit your Virginia Beach home and provide a detailed written estimate.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How do you calculate pricing for handyman work?</div>
+                        <div class="faq-answer">We calculate pricing based on time, materials, and complexity. Simple tasks are often priced by the job, while larger projects are estimated based on time and materials. We always provide clear, upfront pricing before beginning any work.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What payment methods do you accept?</div>
+                        <div class="faq-answer">We accept cash, check, and all major credit cards for your convenience. Payment is typically due upon completion of work. For larger projects, we can discuss payment arrangements during the estimate process.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How far in advance should I schedule handyman services?</div>
+                        <div class="faq-answer">For non-emergency work, we recommend scheduling 1-2 weeks in advance, though we often have same-day or next-day availability. Emergency repairs are prioritized and typically handled within 2-4 hours of your call.</div>
+                    </div>
+                </div>
+
+                <!-- Licensing and Insurance FAQ -->
+                <div class="faq-category">
+                    <h3>🛡️ Licensing and Insurance</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Are you licensed and insured in Virginia Beach?</div>
+                        <div class="faq-answer">Yes, we're fully licensed as a home improvement contractor in Virginia, bonded, and carry comprehensive liability insurance including $1M coverage. We can provide proof of insurance and licensing upon request. This protects both you and us during all work.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you pull permits for handyman work when required?</div>
+                        <div class="faq-answer">Yes, when permits are required for electrical, plumbing, or structural work in Virginia Beach, we handle the permit application process. We ensure all work meets local building codes and passes required inspections.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What insurance protections do you provide?</div>
+                        <div class="faq-answer">We carry comprehensive general liability insurance, workers compensation, and are bonded for your protection. This coverage protects your Virginia Beach property and provides peace of mind during all handyman services.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Are your technicians background checked?</div>
+                        <div class="faq-answer">Yes, all our handyman technicians undergo thorough background checks and reference verification. We only hire trustworthy, skilled professionals you can feel comfortable having in your Virginia Beach home.</div>
+                    </div>
+                </div>
+
+                <!-- Emergency Services FAQ -->
+                <div class="faq-category">
+                    <h3>🚨 Emergency Services</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How quickly can you respond to emergency repairs?</div>
+                        <div class="faq-answer">For true emergencies like burst pipes, electrical hazards, or storm damage, we typically arrive within 2-4 hours. For urgent but non-dangerous issues, same-day service is usually available. We understand some problems can't wait.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What constitutes a handyman emergency?</div>
+                        <div class="faq-answer">Handyman emergencies include burst pipes, electrical hazards, storm damage, security issues (broken locks/doors), heating/cooling failures, and any situation affecting your family's safety or causing ongoing property damage.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you charge extra for emergency calls?</div>
+                        <div class="faq-answer">Emergency calls have a service charge to cover after-hours response, but we don't engage in price gouging. Our emergency rates are fair and clearly explained when you call. We believe in honest pricing even during urgent situations.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Are emergency services available on weekends and holidays?</div>
+                        <div class="faq-answer">Yes, our Virginia Beach emergency handyman services are available 24/7, including weekends and holidays. Home emergencies don't follow business hours, and neither do we when your family's safety is at stake.</div>
+                    </div>
+                </div>
+
+                <!-- Service Areas FAQ -->
+                <div class="faq-category">
+                    <h3>📍 Service Areas</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What areas of Virginia Beach do you serve?</div>
+                        <div class="faq-answer">We serve all of Virginia Beach including Oceanfront, Hilltop, Kempsville, Princess Anne, Pungo, and all surrounding neighborhoods. Our central location allows us to respond quickly throughout the entire Virginia Beach area.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you serve areas outside Virginia Beach?</div>
+                        <div class="faq-answer">Yes, we also provide handyman services to nearby areas including Chesapeake, Norfolk, and Portsmouth when scheduling permits. Contact us to confirm service availability for your specific location.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Is there a travel charge for service calls?</div>
+                        <div class="faq-answer">There's no travel charge within Virginia Beach city limits. For locations outside Virginia Beach, we may apply a modest travel fee depending on distance. This is always discussed and agreed upon before scheduling your appointment.</div>
+                    </div>
+                </div>
+
+                <!-- Quality and Warranties FAQ -->
+                <div class="faq-category">
+                    <h3>✅ Quality and Warranties</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you guarantee your handyman work?</div>
+                        <div class="faq-answer">Absolutely! All our handyman work comes with our satisfaction guarantee. We warranty our workmanship and use quality parts with manufacturer warranties. If you're not completely satisfied, we'll make it right at no additional cost.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What if I'm not satisfied with the work performed?</div>
+                        <div class="faq-answer">Your satisfaction is our priority. If any aspect of our Virginia Beach handyman work doesn't meet your expectations, contact us immediately. We'll return to correct any issues at no charge until you're completely satisfied.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How long are your warranties on handyman services?</div>
+                        <div class="faq-answer">Warranty periods vary by service type. Most repairs come with a 90-day warranty on workmanship, while installations may have longer warranties. Parts warranties are covered by manufacturer terms. We'll specify warranty details for your specific project.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you use quality materials and parts?</div>
+                        <div class="faq-answer">Yes, we use quality materials from trusted suppliers and manufacturers. We believe using good materials prevents callbacks and ensures long-lasting results for our Virginia Beach customers. Quality materials are part of our professional standards.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Still Have Questions About Our Virginia Beach Handyman Services?</h2>
+                    <p>Don't see your question answered here? Our friendly team is ready to provide personalized answers and help you with any handyman needs in Virginia Beach VA.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="tel:(877) 478-2959" class="btn btn-primary">
+                        <span class="btn-icon">📞</span>
+                        <span>Call (877) 478-2959</span>
+                    </a>
+                    <div class="cta-features">
+                        <span class="feature">❓ Free Consultations</span>
+                        <span class="feature">💬 Personal Answers</span>
+                        <span class="feature">📞 Call Anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bob's Jobs Handyman</h3>
+                    <p>Professional handyman services in Virginia Beach, VA. Licensed, insured, and locally trusted since 2015. All your questions answered with quality service.</p>
+                    <div class="footer-contact">
+                        <p><span class="contact-icon">📞</span> (877) 478-2959</p>
+                        <p><span class="contact-icon">📍</span> Serving Virginia Beach, VA</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="emergency-repairs-virginia-beach-va.html">Emergency Repairs</a></li>
+                        <li><a href="furniture-assembly-virginia-beach-va.html">Furniture Assembly</a></li>
+                        <li><a href="drywall-repair-virginia-beach-va.html">Drywall Repair</a></li>
+                        <li><a href="plumbing-repairs-virginia-beach-va.html">Plumbing Repairs</a></li>
+                        <li><a href="electrical-work-virginia-beach-va.html">Electrical Work</a></li>
+                        <li><a href="home-maintenance-virginia-beach-va.html">Home Maintenance</a></li>
+                        <li><a href="carpentry-services-virginia-beach-va.html">Carpentry Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about-us-virginia-beach-handyman.html">About Us</a></li>
+                        <li><a href="faq-virginia-beach-handyman.html">FAQ</a></li>
+                        <li>Virginia Beach</li>
+                        <li>Chesapeake</li>
+                        <li>Norfolk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bob's Jobs Handyman Virginia Beach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ JavaScript for Interactivity -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click handlers for FAQ items
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-question').forEach(otherQuestion => {
+                    otherQuestion.classList.remove('active');
+                    const otherAnswer = otherQuestion.nextElementSibling;
+                    if (otherAnswer) {
+                        otherAnswer.style.display = 'none';
+                    }
+                });
+                
+                // Toggle this FAQ
+                if (!isActive) {
+                    this.classList.add('active');
+                    answer.style.display = 'block';
+                }
+            });
+        });
+        
+        // Initially hide all answers
+        const faqAnswers = document.querySelectorAll('.faq-answer');
+        faqAnswers.forEach((answer) => {
+            answer.style.display = 'none';
+        });
+        
+        // Style FAQ questions to look clickable
+        faqQuestions.forEach(question => {
+            question.style.cursor = 'pointer';
+            question.style.color = '#00D4AA';
+            question.style.fontWeight = '600';
+            question.style.marginBottom = '0.75rem';
+        });
+    });
+    </script>
+</body>
+</html>
