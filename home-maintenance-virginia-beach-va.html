@@ -32,13 +32,19 @@
             color: #1a1f36 !important;
             margin: 0 auto 1rem !important;
         }
-        .service-cards-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important; gap: 2rem !important; }
+        .service-cards-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 2rem !important; }
         .service-card { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 2rem !important; }
         .service-details-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; gap: 2rem !important; }
         .service-detail-box { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 2rem !important; }
-        .process-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important; gap: 1.5rem !important; }
+        .process-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 1.5rem !important; }
+        
+        @media (max-width: 768px) {
+            .service-cards-grid { grid-template-columns: 1fr !important; }
+            .maintenance-grid { grid-template-columns: 1fr !important; }
+            .process-grid { grid-template-columns: 1fr !important; }
+        }
         .process-step { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 1.5rem !important; text-align: center !important; }
-        .maintenance-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; gap: 1.5rem !important; }
+        .maintenance-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 1.5rem !important; }
         .maintenance-card { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 1.5rem !important; }
     </style>
     
