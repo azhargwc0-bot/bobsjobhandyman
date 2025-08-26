@@ -14,13 +14,13 @@
         /* Blog Article Layout matching main site theme */
         .blog-article {
             background: var(--primary-bg, #1a1f36);
-            padding: var(--spacing-12, 3rem) 0;
+            padding: 0 0 var(--spacing-12, 3rem);
             min-height: 100vh;
         }
         
         .article-content {
             max-width: 900px;
-            margin: 0 auto;
+            margin: var(--spacing-16, 4rem) auto 0;
             background: var(--card-bg, #2a3458);
             border-radius: 12px;
             box-shadow: var(--shadow, 0 4px 16px rgba(0, 0, 0, 0.2));
@@ -41,36 +41,6 @@
             font-weight: 700;
         }
         
-        /* Article Header */
-        .article-header {
-            padding: var(--spacing-12, 3rem);
-            border-bottom: 1px solid var(--card-border, rgba(0, 212, 170, 0.1));
-        }
-        
-        .article-title {
-            font-size: var(--font-size-4xl, 2.5rem);
-            font-weight: 700;
-            color: var(--text-primary, #ffffff);
-            line-height: 1.2;
-            margin-bottom: var(--spacing-6, 1.5rem);
-        }
-        
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--spacing-8, 2rem);
-            color: var(--text-secondary, #b8c5d6);
-            font-size: var(--font-size-base, 1rem);
-            margin-bottom: var(--spacing-8, 2rem);
-            padding-bottom: var(--spacing-8, 2rem);
-            border-bottom: 1px solid rgba(184, 197, 214, 0.1);
-        }
-        
-        .article-meta span {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-2, 0.5rem);
-        }
         
         /* Article Body */
         .article-body {
@@ -499,21 +469,14 @@
             }
             
             .article-content {
-                margin: 0 var(--spacing-4, 1rem);
+                margin: var(--spacing-8, 2rem) var(--spacing-4, 1rem) 0;
                 border-radius: 8px;
-            }
-            
-            .article-header {
-                padding: var(--spacing-8, 2rem);
             }
             
             .article-body {
                 padding: var(--spacing-8, 2rem);
             }
             
-            .article-title {
-                font-size: var(--font-size-3xl, 2rem);
-            }
             
             .article-section h2 {
                 font-size: var(--font-size-2xl, 1.5rem);
@@ -618,14 +581,20 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="breadcrumbs">
-                    <a href="../index.html">Home</a> > <a href="index.html">Blog</a> > <span>Hurricane Preparation</span>
+                <div class="breadcrumbs" style="color: var(--text-secondary); margin-bottom: var(--spacing-6);">
+                    <a href="../index.html" style="color: var(--accent-teal); text-decoration: none;">Home</a> 
+                    <span style="color: var(--text-muted); margin: 0 var(--spacing-2);">></span> 
+                    <a href="index.html" style="color: var(--accent-teal); text-decoration: none;">Blog</a> 
+                    <span style="color: var(--text-muted); margin: 0 var(--spacing-2);">></span> 
+                    <span style="color: var(--text-secondary);">Hurricane Preparation</span>
                 </div>
                 <h1 class="hero-title">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
-                <div class="blog-meta">
-                    <span class="publish-date">Published: August 26, 2025</span>
-                    <span class="read-time">12 min read</span>
-                    <span class="author">By Bob's Jobs Handyman Team</span>
+                <div class="hero-subtitle">
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: var(--spacing-6); margin-top: var(--spacing-6); font-size: var(--font-size-base); color: var(--text-secondary);">
+                        <span style="display: flex; align-items: center; gap: var(--spacing-2);">📅 Published: August 26, 2025</span>
+                        <span style="display: flex; align-items: center; gap: var(--spacing-2);">⏱️ 12 min read</span>
+                        <span style="display: flex; align-items: center; gap: var(--spacing-2);">✍️ Bob's Jobs Handyman Team</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -639,15 +608,6 @@
                 🌊 Hurricane Preparation Guide for Virginia Beach
             </div>
             
-            <!-- Article Header -->
-            <div class="article-header">
-                <h1 class="article-title">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
-                <div class="article-meta">
-                    <span class="publish-date">📅 Published: August 26, 2025</span>
-                    <span class="read-time">⏱️ 12 min read</span>
-                    <span class="author">✍️ Bob's Jobs Handyman Team</span>
-                </div>
-            </div>
             
             <!-- Article Body -->
             <div class="article-body">
