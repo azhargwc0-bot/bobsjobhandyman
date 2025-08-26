@@ -7,7 +7,7 @@
     <meta name="description" content="Expert handyman tips, home improvement guides, and seasonal preparation advice for Virginia Beach homeowners. Professional insights from Bob's Jobs Handyman team.">
     <meta name="keywords" content="handyman blog Virginia Beach, home improvement tips, hurricane preparation, home maintenance guide, handyman advice Hampton Roads">
     <link rel="canonical" href="https://bobsjobshandyman.com/blog/">
-    <link rel="stylesheet" href="../styles.css?v=2.9">
+    <link rel="stylesheet" href="../styles.css?v=3.0">
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -27,9 +27,224 @@
         }
     }
     </script>
+    
+    <style>
+        /* Simple Blog Index Styling - Matches Individual Posts */
+        body {
+            padding-top: 100px; /* Account for fixed navbar */
+        }
+        
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .breadcrumbs {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .breadcrumbs a {
+            color: var(--accent-teal);
+            text-decoration: none;
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .blog-posts {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 3rem;
+            border: 1px solid var(--card-border);
+            box-shadow: var(--shadow);
+        }
+        
+        .post-card {
+            background: var(--secondary-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 212, 170, 0.2);
+            border-color: var(--accent-teal);
+        }
+        
+        .post-card h3 {
+            color: var(--accent-teal);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .post-card h3 a {
+            color: var(--accent-teal);
+            text-decoration: none;
+        }
+        
+        .post-card h3 a:hover {
+            color: var(--accent-teal-dark);
+        }
+        
+        .post-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .post-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tag {
+            background: rgba(0, 212, 170, 0.1);
+            color: var(--accent-teal);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background: var(--accent-teal);
+            color: var(--primary-bg);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .read-more:hover {
+            background: var(--accent-teal-dark);
+            transform: translateY(-1px);
+        }
+        
+        .coming-soon {
+            opacity: 0.6;
+            position: relative;
+        }
+        
+        .coming-soon::before {
+            content: "Coming Soon";
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #ffc107;
+            color: var(--primary-bg);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: var(--secondary-bg);
+            border: 2px solid var(--accent-teal);
+            color: var(--text-primary);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 212, 170, 0.2);
+        }
+        
+        .cta-section h3 {
+            color: var(--accent-teal);
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-teal);
+            color: var(--primary-bg);
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-teal-dark);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding-top: 120px;
+            }
+            
+            .blog-container {
+                padding: 1rem 0.5rem;
+            }
+            
+            .blog-posts {
+                padding: 2rem 1.5rem;
+            }
+            
+            .blog-title {
+                font-size: 2rem;
+            }
+            
+            .post-card {
+                padding: 1.5rem;
+            }
+            
+            .post-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Modern Navigation -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -51,7 +266,7 @@
                 </div>
                 <a href="../about-us-virginia-beach-handyman.html" class="nav-link">About Us</a>
                 <a href="../faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
-                <a href="index.html" class="nav-link active">Blog</a>
+                <a href="index.html" class="nav-link">Blog</a>
             </div>
             <a href="tel:(877) 478-2959" class="nav-phone">
                 <span class="phone-icon">📞</span>
@@ -60,266 +275,110 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="breadcrumbs">
-                    <a href="../index.html">Home</a> > <span>Blog</span>
-                </div>
-                <h1 class="hero-title">Bob's Jobs Handyman Blog</h1>
-                <p class="hero-subtitle">Expert tips, seasonal guides, and professional advice for Virginia Beach homeowners</p>
+    <div class="blog-container">
+        <!-- Blog Header -->
+        <div class="blog-header">
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a> > Blog
             </div>
+            <h1 class="blog-title">Bob's Jobs Handyman Blog</h1>
+            <p class="blog-subtitle">Expert home improvement tips, hurricane preparation guides, and handyman advice for Hampton Roads homeowners</p>
         </div>
-    </section>
 
-        <!-- Blog Content -->
-        <section class="blog-listing">
-            <div class="container">
-                <div class="blog-intro">
-                    <h2>Home Improvement Expertise You Can Trust</h2>
-                    <p>Since 2015, Bob's Jobs has been Virginia Beach's trusted handyman service. Our blog shares professional insights, seasonal preparation guides, and practical tips to help Hampton Roads homeowners maintain and improve their properties.</p>
+        <!-- Blog Posts -->
+        <div class="blog-posts">
+            
+            <!-- Hampton Roads Home Repairs Post -->
+            <article class="post-card">
+                <h3><a href="common-home-repairs-hampton-roads.html">The 10 Most Common Home Repairs Every Hampton Roads Homeowner Faces</a></h3>
+                <div class="post-meta">
+                    <span>📅 Published: August 26, 2025</span>
+                    <span>⏱️ 15 min read</span>
+                    <span>✍️ Bob's Jobs Team</span>
                 </div>
-
-                <!-- Featured Post -->
-                <div class="featured-post">
-                    <h3>Featured Article</h3>
-                    <article class="blog-post-card featured">
-                        <div class="post-image">
-                            <div class="post-placeholder">🌊 Hurricane Preparation Guide</div>
-                            <div class="post-category">Hurricane Season</div>
-                        </div>
-                        <div class="post-content">
-                            <h4><a href="hurricane-season-home-prep-virginia-beach.html">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</a></h4>
-                            <div class="post-meta">
-                                <span class="post-date">August 26, 2025</span>
-                                <span class="post-read-time">12 min read</span>
-                                <span class="post-author">Bob's Jobs Team</span>
-                            </div>
-                            <p class="post-excerpt">Living in Virginia Beach means dealing with hurricane season from June through November. This comprehensive guide shares our professional expertise from over 10 years of storm preparation and recovery to help you protect your home and family.</p>
-                            <div class="post-highlights">
-                                <h5>What You'll Learn:</h5>
-                                <ul>
-                                    <li>Pre-season preparation checklist for May-June</li>
-                                    <li>Professional storm-proofing techniques</li>
-                                    <li>Emergency repair supplies and tools</li>
-                                    <li>Post-storm assessment and recovery</li>
-                                    <li>When to call professionals vs DIY repairs</li>
-                                </ul>
-                            </div>
-                            <div class="post-cta">
-                                <a href="hurricane-season-home-prep-virginia-beach.html" class="btn-primary">Read Full Guide</a>
-                                <span class="post-tags">
-                                    <span class="tag">Hurricane Prep</span>
-                                    <span class="tag">Storm Damage</span>
-                                    <span class="tag">Emergency Repairs</span>
-                                    <span class="tag">Virginia Beach</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
+                <p class="post-excerpt">Discover the most frequent home repairs needed in Hampton Roads, from humidity damage to storm repairs. Get expert handyman tips with detailed cost guides for coastal Virginia homeowners.</p>
+                <div class="post-tags">
+                    <span class="tag">Home Repairs</span>
+                    <span class="tag">Hampton Roads</span>
+                    <span class="tag">Maintenance</span>
+                    <span class="tag">Cost Guide</span>
                 </div>
+                <a href="common-home-repairs-hampton-roads.html" class="read-more">Read Full Guide</a>
+            </article>
 
-                <!-- Recent Posts -->
-                <div class="recent-posts">
-                    <h3>Recent Articles</h3>
-                    <div class="blog-posts-grid">
-                        
-                        <!-- Hurricane Post Summary -->
-                        <article class="blog-post-card">
-                            <div class="post-image">
-                                <div class="post-placeholder">⛈️ Storm Preparation</div>
-                                <div class="post-category">Seasonal Prep</div>
-                            </div>
-                            <div class="post-content">
-                                <h4><a href="hurricane-season-home-prep-virginia-beach.html">Hurricane Season Home Prep: Essential Checklist 2025</a></h4>
-                                <div class="post-meta">
-                                    <span class="post-date">August 26, 2025</span>
-                                    <span class="post-read-time">12 min read</span>
-                                </div>
-                                <p class="post-excerpt">Complete hurricane preparation guide with professional handyman tips for Virginia Beach homeowners. Includes pre-season checklist, storm-proofing techniques, and 15 FAQs.</p>
-                                <div class="post-footer">
-                                    <a href="hurricane-season-home-prep-virginia-beach.html" class="read-more">Read More →</a>
-                                    <div class="post-tags">
-                                        <span class="tag">Hurricane</span>
-                                        <span class="tag">Safety</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- Placeholder for Future Posts -->
-                        <article class="blog-post-card coming-soon">
-                            <div class="post-image">
-                                <div class="coming-soon-badge">Coming Soon</div>
-                            </div>
-                            <div class="post-content">
-                                <h4>Winter Home Maintenance Checklist for Hampton Roads</h4>
-                                <div class="post-meta">
-                                    <span class="post-date">Coming December 2025</span>
-                                    <span class="post-read-time">8 min read</span>
-                                </div>
-                                <p class="post-excerpt">Essential winter preparation tasks to protect your Virginia Beach home from cold weather damage. Professional tips for heating systems, pipes, and weatherproofing.</p>
-                                <div class="post-footer">
-                                    <span class="coming-soon-text">Article in development</span>
-                                    <div class="post-tags">
-                                        <span class="tag">Winter Prep</span>
-                                        <span class="tag">Maintenance</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="blog-post-card coming-soon">
-                            <div class="post-image">
-                                <div class="coming-soon-badge">Coming Soon</div>
-                            </div>
-                            <div class="post-content">
-                                <h4>Spring Home Inspection: What Virginia Beach Homeowners Need to Check</h4>
-                                <div class="post-meta">
-                                    <span class="post-date">Coming March 2025</span>
-                                    <span class="post-read-time">10 min read</span>
-                                </div>
-                                <p class="post-excerpt">Comprehensive spring inspection guide covering roof, siding, HVAC, and foundation checks specific to coastal Virginia Beach properties.</p>
-                                <div class="post-footer">
-                                    <span class="coming-soon-text">Article in development</span>
-                                    <div class="post-tags">
-                                        <span class="tag">Spring Prep</span>
-                                        <span class="tag">Inspection</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="blog-post-card coming-soon">
-                            <div class="post-image">
-                                <div class="coming-soon-badge">Coming Soon</div>
-                            </div>
-                            <div class="post-content">
-                                <h4>DIY vs Professional: When to Call a Handyman in Virginia Beach</h4>
-                                <div class="post-meta">
-                                    <span class="post-date">Coming September 2025</span>
-                                    <span class="post-read-time">6 min read</span>
-                                </div>
-                                <p class="post-excerpt">Expert guidance on which home repairs you can tackle yourself and when it's time to call Bob's Jobs for professional help. Save money and avoid costly mistakes.</p>
-                                <div class="post-footer">
-                                    <span class="coming-soon-text">Article in development</span>
-                                    <div class="post-tags">
-                                        <span class="tag">DIY Tips</span>
-                                        <span class="tag">Professional Help</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
+            <!-- Hurricane Preparation Post -->
+            <article class="post-card">
+                <h3><a href="hurricane-season-home-prep-virginia-beach.html">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</a></h3>
+                <div class="post-meta">
+                    <span>📅 Published: August 26, 2025</span>
+                    <span>⏱️ 12 min read</span>
+                    <span>✍️ Bob's Jobs Team</span>
                 </div>
-
-                <!-- Categories -->
-                <div class="blog-categories">
-                    <h3>Browse by Category</h3>
-                    <div class="categories-grid">
-                        <div class="category-card">
-                            <div class="category-icon">🌊</div>
-                            <h4>Hurricane & Storm Prep</h4>
-                            <p>Seasonal preparation guides, storm-proofing tips, and emergency repair advice for coastal Virginia Beach properties.</p>
-                            <span class="post-count">1 article</span>
-                        </div>
-                        
-                        <div class="category-card coming-soon-category">
-                            <div class="category-icon">❄️</div>
-                            <h4>Winter Maintenance</h4>
-                            <p>Cold weather preparation, heating system care, and winter damage prevention for Hampton Roads homes.</p>
-                            <span class="post-count">Coming soon</span>
-                        </div>
-                        
-                        <div class="category-card coming-soon-category">
-                            <div class="category-icon">🌸</div>
-                            <h4>Spring Preparation</h4>
-                            <p>Post-winter inspections, spring cleaning tips, and preparation for the active season ahead.</p>
-                            <span class="post-count">Coming soon</span>
-                        </div>
-                        
-                        <div class="category-card coming-soon-category">
-                            <div class="category-icon">🔧</div>
-                            <h4>DIY vs Professional</h4>
-                            <p>Expert guidance on when to tackle repairs yourself and when to call Bob's Jobs for professional help.</p>
-                            <span class="post-count">Coming soon</span>
-                        </div>
-                        
-                        <div class="category-card coming-soon-category">
-                            <div class="category-icon">🏠</div>
-                            <h4>Home Maintenance</h4>
-                            <p>Regular upkeep tips, preventive maintenance schedules, and care guides for all home systems.</p>
-                            <span class="post-count">Coming soon</span>
-                        </div>
-                        
-                        <div class="category-card coming-soon-category">
-                            <div class="category-icon">⚡</div>
-                            <h4>Emergency Repairs</h4>
-                            <p>Quick fixes, emergency response tips, and guidance for urgent home repair situations.</p>
-                            <span class="post-count">Coming soon</span>
-                        </div>
-                    </div>
+                <p class="post-excerpt">Living in Virginia Beach means dealing with hurricane season from June through November. This comprehensive guide shares our professional expertise from over 10 years of storm preparation and recovery.</p>
+                <div class="post-tags">
+                    <span class="tag">Hurricane Prep</span>
+                    <span class="tag">Storm Damage</span>
+                    <span class="tag">Emergency Repairs</span>
+                    <span class="tag">Virginia Beach</span>
                 </div>
+                <a href="hurricane-season-home-prep-virginia-beach.html" class="read-more">Read Full Guide</a>
+            </article>
 
-                <!-- Newsletter Signup -->
-                <div class="blog-newsletter">
-                    <div class="newsletter-content">
-                        <h3>Stay Updated with Bob's Jobs</h3>
-                        <p>Get the latest home maintenance tips, seasonal preparation guides, and exclusive handyman advice delivered to your inbox.</p>
-                        <div class="newsletter-features">
-                            <div class="feature">
-                                <span class="feature-icon">📧</span>
-                                <span>Monthly maintenance tips</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🌊</span>
-                                <span>Seasonal preparation reminders</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">💡</span>
-                                <span>Expert DIY guidance</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🚨</span>
-                                <span>Emergency repair tips</span>
-                            </div>
-                        </div>
-                        <div class="newsletter-cta">
-                            <p><strong>Want personalized advice for your Virginia Beach home?</strong></p>
-                            <a href="tel:(877) 478-2959" class="btn-primary">Call (877) 478-2959 for Expert Consultation</a>
-                        </div>
-                    </div>
+            <!-- Coming Soon Posts -->
+            <article class="post-card coming-soon">
+                <h3><a href="#">Spring Home Maintenance Checklist for Virginia Beach Properties</a></h3>
+                <div class="post-meta">
+                    <span>📅 Coming March 2025</span>
+                    <span>⏱️ 10 min read</span>
+                    <span>✍️ Bob's Jobs Team</span>
                 </div>
-
-                <!-- Local Focus -->
-                <div class="local-expertise">
-                    <h3>Local Virginia Beach Expertise</h3>
-                    <p>Our blog focuses specifically on the unique challenges facing Virginia Beach and Hampton Roads homeowners:</p>
-                    <div class="expertise-grid">
-                        <div class="expertise-item">
-                            <h4>🌊 Coastal Climate Challenges</h4>
-                            <p>Salt air corrosion, humidity effects, and coastal storm preparation</p>
-                        </div>
-                        <div class="expertise-item">
-                            <h4>🏖️ Oceanfront Properties</h4>
-                            <p>Specialized maintenance for beachfront and high-rise buildings</p>
-                        </div>
-                        <div class="expertise-item">
-                            <h4>⛈️ Hurricane Season Reality</h4>
-                            <p>Real experience from Hurricane Isabel, Sandy, and recent storms</p>
-                        </div>
-                        <div class="expertise-item">
-                            <h4>🏘️ Neighborhood Specifics</h4>
-                            <p>From Oceanfront to Chesapeake Bay, tailored advice for your area</p>
-                        </div>
-                    </div>
+                <p class="post-excerpt">Comprehensive spring inspection guide covering roof, siding, HVAC, and foundation checks specific to coastal Virginia Beach properties.</p>
+                <div class="post-tags">
+                    <span class="tag">Spring Prep</span>
+                    <span class="tag">Inspection</span>
+                    <span class="tag">Maintenance</span>
                 </div>
+            </article>
 
-            </div>
-        </section>
-    </main>
+            <article class="post-card coming-soon">
+                <h3><a href="#">DIY vs Professional: When to Call a Handyman in Virginia Beach</a></h3>
+                <div class="post-meta">
+                    <span>📅 Coming September 2025</span>
+                    <span>⏱️ 8 min read</span>
+                    <span>✍️ Bob's Jobs Team</span>
+                </div>
+                <p class="post-excerpt">Expert guidance on which home repairs you can tackle yourself and when it's time to call Bob's Jobs for professional help. Save money and avoid costly mistakes.</p>
+                <div class="post-tags">
+                    <span class="tag">DIY Tips</span>
+                    <span class="tag">Professional Help</span>
+                    <span class="tag">Safety</span>
+                </div>
+            </article>
+
+            <article class="post-card coming-soon">
+                <h3><a href="#">Winter Storm Preparation for Hampton Roads Homes</a></h3>
+                <div class="post-meta">
+                    <span>📅 Coming November 2025</span>
+                    <span>⏱️ 9 min read</span>
+                    <span>✍️ Bob's Jobs Team</span>
+                </div>
+                <p class="post-excerpt">Prepare your Hampton Roads home for winter weather with our comprehensive guide covering heating system maintenance, pipe protection, and emergency planning.</p>
+                <div class="post-tags">
+                    <span class="tag">Winter Prep</span>
+                    <span class="tag">Cold Weather</span>
+                    <span class="tag">Prevention</span>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h3>🔧 Need Professional Handyman Services?</h3>
+            <p>From routine repairs to emergency storm damage, Bob's Jobs provides reliable handyman services throughout Hampton Roads. Our experienced team serves Virginia Beach, Norfolk, Chesapeake, Portsmouth, Suffolk, and Newport News.</p>
+            <a href="tel:(877) 478-2959" class="cta-button">Call (877) 478-2959</a>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -330,7 +389,7 @@
                     <p>Professional home maintenance and handyman services in Virginia Beach, VA. Licensed, insured, and locally trusted since 2015.</p>
                     <div class="footer-contact">
                         <p><span class="contact-icon">📞</span> (877) 478-2959</p>
-                        <p><span class="contact-icon">📍</span> Serving Virginia Beach, VA</p>
+                        <p><span class="contact-icon">📍</span> Serving Hampton Roads, VA</p>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -342,7 +401,7 @@
                         <li><a href="../plumbing-repairs-virginia-beach-va.html">Plumbing Repairs</a></li>
                         <li><a href="../electrical-work-virginia-beach-va.html">Electrical Work</a></li>
                         <li><a href="../home-maintenance-virginia-beach-va.html">Home Maintenance</a></li>
-                        <li><a href="hurricane-season-home-prep-virginia-beach.html">Hurricane Preparation</a></li>
+                        <li><a href="../carpentry-services-virginia-beach-va.html">Carpentry Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -362,378 +421,5 @@
             </div>
         </div>
     </footer>
-
-    <style>
-        /* Blog-specific styles */
-        .blog-listing {
-            padding: 2rem 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            min-height: 100vh;
-        }
-
-        .blog-intro {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding: 0 1rem;
-        }
-
-        .blog-intro h2 {
-            color: #1a365d;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-
-        .featured-post {
-            margin-bottom: 2rem;
-        }
-
-        .featured-post h3 {
-            color: #1a365d;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .blog-post-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 1.5rem;
-            height: fit-content;
-        }
-
-        .blog-post-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .blog-post-card.featured {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .post-image {
-            position: relative;
-            height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            overflow: hidden;
-        }
-
-        .post-placeholder {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .blog-post-card.featured .post-image {
-            height: 300px;
-        }
-
-        .post-category {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-            background: rgba(0,0,0,0.8);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .coming-soon-badge {
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-weight: 500;
-        }
-
-        .post-content {
-            padding: 1.5rem;
-        }
-
-        .post-content h4 {
-            margin-bottom: 1rem;
-            color: #1a365d;
-        }
-
-        .post-content h4 a {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .post-content h4 a:hover {
-            color: #2b6cb0;
-        }
-
-        .post-meta {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
-
-        .post-excerpt {
-            color: #4a5568;
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .post-highlights {
-            background: #f7fafc;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            border-left: 4px solid #2b6cb0;
-        }
-
-        .post-highlights h5 {
-            margin-bottom: 0.5rem;
-            color: #1a365d;
-            font-size: 0.9rem;
-        }
-
-        .post-highlights ul {
-            margin: 0;
-            padding-left: 1.5rem;
-            font-size: 0.9rem;
-        }
-
-        .post-highlights li {
-            margin-bottom: 0.25rem;
-            color: #4a5568;
-        }
-
-        .post-cta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1.5rem;
-        }
-
-        .post-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        .btn-primary {
-            background: #2b6cb0;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background: #2c5282;
-        }
-
-        .read-more {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .read-more:hover {
-            text-decoration: underline;
-        }
-
-        .post-tags {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .tag {
-            background: #e2e8f0;
-            color: #4a5568;
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .blog-posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .coming-soon {
-            opacity: 0.7;
-        }
-
-        .coming-soon-text {
-            color: #9ca3af;
-            font-style: italic;
-        }
-
-        .recent-posts h3,
-        .blog-categories h3 {
-            color: #1a365d;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .category-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .category-card:hover {
-            transform: translateY(-3px);
-        }
-
-        .coming-soon-category {
-            opacity: 0.6;
-        }
-
-        .category-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .category-card h4 {
-            color: #1a365d;
-            margin-bottom: 0.5rem;
-        }
-
-        .category-card p {
-            color: #6b7280;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .post-count {
-            background: #e2e8f0;
-            color: #4a5568;
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .blog-newsletter {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .newsletter-content h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .newsletter-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .feature {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            justify-content: center;
-        }
-
-        .feature-icon {
-            font-size: 1.2rem;
-        }
-
-        .newsletter-cta {
-            margin-top: 2rem;
-        }
-
-        .newsletter-cta p {
-            margin-bottom: 1rem;
-        }
-
-        .local-expertise {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .local-expertise h3 {
-            color: #1a365d;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .expertise-item h4 {
-            color: #1a365d;
-            margin-bottom: 0.5rem;
-        }
-
-        .expertise-item p {
-            color: #6b7280;
-            font-size: 0.9rem;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .blog-post-card.featured {
-                grid-template-columns: 1fr;
-            }
-
-            .blog-posts-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .post-cta {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: flex-start;
-            }
-
-            .newsletter-features {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </body>
 </html>
