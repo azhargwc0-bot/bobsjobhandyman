@@ -9,547 +9,147 @@
     <link rel="canonical" href="https://bobsjobshandyman.com/blog/hurricane-season-home-prep-virginia-beach.html">
     <link rel="stylesheet" href="../styles.css?v=3.0">
     
-    <!-- Bob's Jobs Brand-Consistent Blog Styling -->
     <style>
-        /* Blog Article Layout matching main site theme */
-        .blog-article {
-            background: var(--primary-bg, #1a1f36);
-            padding: var(--spacing-8, 2rem) var(--spacing-4, 1rem) var(--spacing-12, 3rem);
+        /* Simple Blog Styling */
+        body {
+            padding-top: 100px; /* Account for fixed navbar */
         }
         
-        .article-content {
+        .blog-container {
             max-width: 900px;
             margin: 0 auto;
-            background: var(--card-bg, #2a3458);
-            border-radius: 12px;
-            box-shadow: var(--shadow, 0 4px 16px rgba(0, 0, 0, 0.2));
-            border: 1px solid var(--card-border, rgba(0, 212, 170, 0.1));
-            overflow: hidden;
+            padding: 2rem 1rem;
         }
         
-        /* Featured Image */
-        .featured-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, var(--accent-teal, #00D4AA) 0%, var(--accent-teal-dark, #00b894) 100%);
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .breadcrumbs {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .breadcrumbs a {
+            color: var(--accent-teal);
+            text-decoration: none;
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-meta {
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: var(--text-primary, #ffffff);
-            font-size: var(--font-size-3xl, 2rem);
-            font-weight: 700;
+            flex-wrap: wrap;
+            gap: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
         
-        
-        /* Article Body */
-        .article-body {
-            padding: var(--spacing-12, 3rem);
-        }
-        
-        /* Section Spacing - Moderate spacing like main site */
-        .article-section {
-            margin-bottom: var(--spacing-16, 4rem);
-        }
-        
-        .article-section:last-child {
-            margin-bottom: var(--spacing-8, 2rem);
-        }
-        
-        /* Typography matching main site hierarchy */
-        .article-section h2 {
-            font-size: var(--font-size-3xl, 2rem);
-            font-weight: 700;
-            color: var(--accent-teal, #00D4AA);
-            margin-bottom: var(--spacing-6, 1.5rem);
-            margin-top: var(--spacing-8, 2rem);
-            line-height: 1.3;
-            position: relative;
-        }
-        
-        .article-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: var(--accent-teal, #00D4AA);
-            border-radius: 2px;
-        }
-        
-        .article-section h3 {
-            font-size: var(--font-size-2xl, 1.5rem);
-            font-weight: 600;
-            color: var(--text-primary, #ffffff);
-            margin-top: var(--spacing-8, 2rem);
-            margin-bottom: var(--spacing-4, 1rem);
-            line-height: 1.4;
-        }
-        
-        .article-section h4 {
-            font-size: var(--font-size-xl, 1.25rem);
-            font-weight: 600;
-            color: var(--accent-teal, #00D4AA);
-            margin-top: var(--spacing-6, 1.5rem);
-            margin-bottom: var(--spacing-3, 0.75rem);
-            line-height: 1.4;
-        }
-        
-        /* Paragraph and text styling */
-        .article-section p {
-            font-size: var(--font-size-lg, 1.125rem);
-            line-height: 1.7;
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: var(--spacing-6, 1.5rem);
-        }
-        
-        .lead {
-            font-size: var(--font-size-xl, 1.25rem);
-            line-height: 1.6;
-            color: var(--text-primary, #ffffff);
-            font-weight: 500;
-            margin-bottom: var(--spacing-8, 2rem);
-            padding: var(--spacing-8, 2rem);
-            background: var(--card-bg, #2a3458);
-            border: 1px solid var(--accent-teal, #00D4AA);
-            border-left: 4px solid var(--accent-teal, #00D4AA);
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 212, 170, 0.1);
-        }
-        
-        /* List styling with proper bullets */
-        .article-section ul {
-            margin-bottom: var(--spacing-6, 1.5rem);
-            padding-left: 0;
-        }
-        
-        .article-section ul li {
-            font-size: var(--font-size-lg, 1.125rem);
-            line-height: 1.6;
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: var(--spacing-3, 0.75rem);
-            padding-left: var(--spacing-6, 1.5rem);
-            position: relative;
-        }
-        
-        .article-section ul li::before {
-            content: "•";
-            color: var(--accent-teal, #00D4AA);
-            font-size: 1.2rem;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        
-        .article-section ol {
-            margin-bottom: var(--spacing-6, 1.5rem);
-            padding-left: var(--spacing-6, 1.5rem);
-        }
-        
-        .article-section ol li {
-            font-size: var(--font-size-lg, 1.125rem);
-            line-height: 1.6;
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: var(--spacing-3, 0.75rem);
-        }
-        
-        /* Clean card-style sections instead of colored boxes */
-        .checklist, .safety-list, .priority-list {
-            background: var(--secondary-bg, #252b47);
-            border: 1px solid var(--card-border, rgba(0, 212, 170, 0.1));
-            border-left: 4px solid var(--accent-teal, #00D4AA);
-            padding: var(--spacing-6, 1.5rem);
-            margin: var(--spacing-8, 2rem) 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .checklist li, .safety-list li, .priority-list li {
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: var(--spacing-3, 0.75rem);
-            padding-left: var(--spacing-6, 1.5rem);
-            position: relative;
-        }
-        
-        .checklist li::before, .safety-list li::before, .priority-list li::before {
-            content: "✓";
-            color: var(--accent-teal, #00D4AA);
-            font-weight: bold;
-            font-size: 1rem;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        
-        /* Clean card-style callouts */
-        .highlight-box {
-            background: var(--secondary-bg, #252b47);
-            border: 2px solid var(--accent-teal, #00D4AA);
-            color: var(--text-primary, #ffffff);
-            padding: var(--spacing-8, 2rem);
+        .blog-content {
+            background: var(--card-bg);
             border-radius: 12px;
-            margin: var(--spacing-8, 2rem) 0;
-            box-shadow: 0 4px 16px rgba(0, 212, 170, 0.2);
+            padding: 3rem;
+            border: 1px solid var(--card-border);
+            box-shadow: var(--shadow);
+        }
+        
+        .blog-content h2 {
+            color: var(--accent-teal);
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-teal);
+            padding-bottom: 0.5rem;
+        }
+        
+        .blog-content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-content p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .blog-content ul, .blog-content ol {
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-content li {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .highlight-box {
+            background: var(--secondary-bg);
+            border: 2px solid var(--accent-teal);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
         }
         
         .highlight-box h3 {
-            color: var(--accent-teal, #00D4AA);
-            font-size: var(--font-size-xl, 1.25rem);
+            color: var(--accent-teal);
             margin-top: 0;
-            margin-bottom: var(--spacing-4, 1rem);
         }
         
-        .highlight-box p {
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: 0;
-        }
-        
-        .pro-tip, .local-tip {
-            background: var(--secondary-bg, #252b47);
-            border: 1px solid rgba(255, 193, 7, 0.3);
-            border-left: 4px solid #ffc107;
-            padding: var(--spacing-6, 1.5rem);
-            border-radius: 8px;
-            margin: var(--spacing-8, 2rem) 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pro-tip h4, .local-tip h4 {
-            color: #ffc107;
-            font-size: var(--font-size-lg, 1.125rem);
-            margin-top: 0;
-            margin-bottom: var(--spacing-3, 0.75rem);
-        }
-        
-        .pro-tip p, .local-tip p {
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: 0;
-        }
-        
-        .warning-box {
-            background: var(--secondary-bg, #252b47);
-            border: 1px solid rgba(220, 38, 38, 0.3);
-            border-left: 4px solid #dc2626;
-            padding: var(--spacing-6, 1.5rem);
-            border-radius: 8px;
-            margin: var(--spacing-8, 2rem) 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .warning-box h4 {
-            color: #ef4444;
-            font-size: var(--font-size-lg, 1.125rem);
-            margin-top: 0;
-            margin-bottom: var(--spacing-3, 0.75rem);
-        }
-        
-        .warning-box p {
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: 0;
-        }
-        
-        /* Grid layouts */
-        .two-column-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-8, 2rem);
-            margin: var(--spacing-6, 1.5rem) 0;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-6, 1.5rem);
-            margin: var(--spacing-8, 2rem) 0;
-        }
-        
-        .service-item {
-            background: var(--secondary-bg, #252b47);
-            padding: var(--spacing-6, 1.5rem);
-            border-radius: 8px;
-            border: 1px solid var(--card-border, rgba(0, 212, 170, 0.1));
-            box-shadow: var(--shadow, 0 4px 16px rgba(0, 0, 0, 0.2));
-            transition: all 0.3s ease;
-        }
-        
-        .service-item:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-hover, 0 8px 32px rgba(0, 212, 170, 0.2));
-            border-color: var(--accent-teal, #00D4AA);
-        }
-        
-        .service-item h4 {
-            color: var(--accent-teal, #00D4AA);
-            font-size: var(--font-size-lg, 1.125rem);
-            margin-top: 0;
-            margin-bottom: var(--spacing-3, 0.75rem);
-        }
-        
-        .service-item p {
-            color: var(--text-secondary, #b8c5d6);
-            margin-bottom: 0;
-            font-size: var(--font-size-base, 1rem);
-        }
-        
-        /* CTA sections matching main site */
-        .cta-section {
-            background: var(--secondary-bg, #252b47);
-            border: 2px solid var(--accent-teal, #00D4AA);
-            color: var(--text-primary, #ffffff);
-            padding: var(--spacing-10, 2.5rem);
-            border-radius: 12px;
-            margin: var(--spacing-12, 3rem) 0;
-            text-align: center;
-            box-shadow: 0 8px 32px rgba(0, 212, 170, 0.2);
-        }
-        
-        .cta-section h3 {
-            color: var(--accent-teal, #00D4AA);
-            font-size: var(--font-size-2xl, 1.5rem);
-            margin-top: 0;
-            margin-bottom: var(--spacing-4, 1rem);
-        }
-        
-        .cta-section p {
-            color: var(--text-secondary, #b8c5d6);
-            font-size: var(--font-size-lg, 1.125rem);
-            margin-bottom: var(--spacing-6, 1.5rem);
-        }
-        
-        .final-cta {
-            background: var(--secondary-bg, #252b47);
-            border: 1px solid var(--card-border, rgba(0, 212, 170, 0.1));
-            padding: var(--spacing-10, 2.5rem);
-            border-radius: 12px;
-            text-align: center;
-            margin: var(--spacing-12, 3rem) 0;
-            box-shadow: var(--shadow, 0 4px 16px rgba(0, 0, 0, 0.2));
-        }
-        
-        .final-cta h3 {
-            color: var(--accent-teal, #00D4AA);
-            font-size: var(--font-size-2xl, 1.5rem);
-            margin-bottom: var(--spacing-4, 1rem);
-        }
-        
-        .final-cta p {
-            color: var(--text-secondary, #b8c5d6);
-            font-size: var(--font-size-lg, 1.125rem);
-            margin-bottom: var(--spacing-6, 1.5rem);
-        }
-        
-        /* Button styling matching main site */
-        .cta-buttons {
-            display: flex;
-            gap: var(--spacing-4, 1rem);
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .cta-primary, .cta-secondary {
-            padding: var(--spacing-4, 1rem) var(--spacing-8, 2rem);
-            font-size: var(--font-size-base, 1rem);
-            font-weight: 600;
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-teal);
+            color: var(--primary-bg);
+            padding: 1rem 2rem;
             border-radius: 6px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--spacing-2, 0.5rem);
-        }
-        
-        .cta-primary {
-            background: var(--accent-teal, #00D4AA);
-            color: var(--primary-bg, #1a1f36);
-            border: 2px solid var(--accent-teal, #00D4AA);
-        }
-        
-        .cta-primary:hover {
-            background: var(--accent-teal-dark, #00b894);
-            border-color: var(--accent-teal-dark, #00b894);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 212, 170, 0.3);
-        }
-        
-        .cta-secondary {
-            background: transparent;
-            color: var(--accent-teal, #00D4AA);
-            border: 2px solid var(--accent-teal, #00D4AA);
-        }
-        
-        .cta-secondary:hover {
-            background: var(--accent-teal, #00D4AA);
-            color: var(--primary-bg, #1a1f36);
-            transform: translateY(-2px);
-        }
-        
-        /* FAQ section */
-        .faq-container {
-            margin-top: var(--spacing-8, 2rem);
-        }
-        
-        .faq-item {
-            background: var(--secondary-bg, #252b47);
-            border: 1px solid var(--card-border, rgba(0, 212, 170, 0.1));
-            border-radius: 8px;
-            margin-bottom: var(--spacing-4, 1rem);
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            border-color: var(--accent-teal, #00D4AA);
-            box-shadow: 0 4px 16px rgba(0, 212, 170, 0.1);
-        }
-        
-        .faq-question {
-            padding: var(--spacing-6, 1.5rem);
-            background: var(--secondary-bg, #252b47);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s ease;
-        }
-        
-        .faq-question:hover {
-            background: rgba(0, 212, 170, 0.05);
-        }
-        
-        .faq-question h3 {
-            margin: 0;
-            color: var(--text-primary, #ffffff);
-            font-size: var(--font-size-lg, 1.125rem);
             font-weight: 600;
-            line-height: 1.5;
+            margin: 1rem 0;
         }
         
-        .faq-toggle {
-            font-size: var(--font-size-xl, 1.25rem);
-            color: var(--accent-teal, #00D4AA);
-            font-weight: bold;
-            transition: transform 0.3s ease;
+        .cta-button:hover {
+            background: var(--accent-teal-dark);
         }
         
-        .faq-item.active .faq-toggle {
-            transform: rotate(45deg);
-        }
-        
-        .faq-answer {
-            padding: 0 var(--spacing-6, 1.5rem);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer p {
-            color: var(--text-secondary, #b8c5d6);
-            font-size: var(--font-size-base, 1rem);
-            line-height: 1.6;
-        }
-        
-        .faq-item.active .faq-answer {
-            padding: var(--spacing-6, 1.5rem);
-            max-height: 500px;
-        }
-        
-        /* Visual breaks */
-        .section-divider {
-            height: 1px;
-            background: linear-gradient(90deg, transparent 0%, var(--card-border, rgba(0, 212, 170, 0.1)) 50%, transparent 100%);
-            margin: var(--spacing-12, 3rem) 0;
-        }
-        
-        /* Mobile responsive */
         @media (max-width: 768px) {
-            .blog-article {
-                padding: var(--spacing-8, 2rem) 0;
+            body {
+                padding-top: 120px;
             }
             
-            .article-content {
-                margin: 0 0;
-                border-radius: 8px;
+            .blog-container {
+                padding: 1rem 0.5rem;
             }
             
-            .blog-article {
-                padding: var(--spacing-4, 1rem) var(--spacing-2, 0.5rem) var(--spacing-8, 2rem);
+            .blog-content {
+                padding: 2rem 1.5rem;
             }
             
-            .article-body {
-                padding: var(--spacing-8, 2rem);
+            .blog-title {
+                font-size: 2rem;
             }
             
-            
-            .article-section h2 {
-                font-size: var(--font-size-2xl, 1.5rem);
-            }
-            
-            .article-section h3 {
-                font-size: var(--font-size-xl, 1.25rem);
-            }
-            
-            .article-section h4 {
-                font-size: var(--font-size-lg, 1.125rem);
-            }
-            
-            .two-column-list {
-                grid-template-columns: 1fr;
-                gap: var(--spacing-6, 1.5rem);
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .cta-buttons {
+            .blog-meta {
                 flex-direction: column;
-                align-items: center;
-            }
-            
-            .featured-image {
-                height: 200px;
-                font-size: var(--font-size-2xl, 1.5rem);
-            }
-            
-            .article-section {
-                margin-bottom: var(--spacing-10, 2.5rem);
+                gap: 0.5rem;
             }
         }
     </style>
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "Hurricane Season Home Prep Virginia Beach: Essential Handyman Checklist 2025",
-        "description": "Complete guide to preparing your Virginia Beach home for hurricane season with professional handyman tips and emergency repair advice.",
-        "image": "https://bobsjobshandyman.com/images/hurricane-prep-virginia-beach.jpg",
-        "author": {
-            "@type": "Organization",
-            "name": "Bob's Jobs Handyman",
-            "url": "https://bobsjobshandyman.com"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Bob's Jobs Handyman",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://bobsjobshandyman.com/logo.png"
-            }
-        },
-        "datePublished": "2025-08-26",
-        "dateModified": "2025-08-26",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://bobsjobshandyman.com/blog/hurricane-season-home-prep-virginia-beach.html"
-        }
-    }
-    </script>
 </head>
 <body>
-    <!-- Modern Navigation -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -580,610 +180,188 @@
         </div>
     </nav>
 
-    <!-- Blog Header Section -->
-    <section style="background: var(--primary-bg); padding: var(--spacing-20) 0 var(--spacing-12); margin-top: 80px;">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-4);">
-            <div style="max-width: 800px; text-align: center; margin: 0 auto;">
-                <div style="color: var(--text-secondary); margin-bottom: var(--spacing-6); font-size: var(--font-size-sm);">
-                    <a href="../index.html" style="color: var(--accent-teal); text-decoration: none;">Home</a> 
-                    <span style="color: var(--text-muted); margin: 0 var(--spacing-2);">></span> 
-                    <a href="index.html" style="color: var(--accent-teal); text-decoration: none;">Blog</a> 
-                    <span style="color: var(--text-muted); margin: 0 var(--spacing-2);">></span> 
-                    <span style="color: var(--text-secondary);">Hurricane Preparation</span>
-                </div>
-                <h1 style="font-size: var(--font-size-4xl); font-weight: 800; line-height: 1.2; margin-bottom: var(--spacing-6); color: var(--text-primary);">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
-                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: var(--spacing-6); font-size: var(--font-size-base); color: var(--text-secondary);">
-                    <span style="display: flex; align-items: center; gap: var(--spacing-2);">📅 Published: August 26, 2025</span>
-                    <span style="display: flex; align-items: center; gap: var(--spacing-2);">⏱️ 12 min read</span>
-                    <span style="display: flex; align-items: center; gap: var(--spacing-2);">✍️ Bob's Jobs Handyman Team</span>
-                </div>
+    <div class="blog-container">
+        <!-- Blog Header -->
+        <div class="blog-header">
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a> > <a href="index.html">Blog</a> > Hurricane Preparation
+            </div>
+            <h1 class="blog-title">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
+            <div class="blog-meta">
+                <span>📅 Published: August 26, 2025</span>
+                <span>⏱️ 12 min read</span>
+                <span>✍️ Bob's Jobs Handyman Team</span>
             </div>
         </div>
-    </section>
 
-    <!-- Article Content -->
-    <article class="blog-article">
-        <div class="article-content">
-            <!-- Featured Image -->
-            <div class="featured-image">
-                🌊 Hurricane Preparation Guide for Virginia Beach
+        <!-- Blog Content -->
+        <div class="blog-content">
+            <p><strong>Living in Virginia Beach means dealing with hurricane season from June through November.</strong> With our coastal location and proximity to the Atlantic Ocean, proper hurricane preparation isn't just recommended—it's essential for protecting your home, family, and investment.</p>
+
+            <p>As experienced handymen serving the Hampton Roads area since 2015, we've helped thousands of homeowners prepare for and recover from major storms including Hurricane Isabel (2003), Hurricane Irene (2011), and Hurricane Sandy (2012). This comprehensive guide shares our professional expertise to help you storm-proof your home and minimize potential damage.</p>
+
+            <div class="highlight-box">
+                <h3>🚨 Emergency Contact Information</h3>
+                <p>For immediate hurricane preparation or emergency repairs, call Bob's Jobs at <strong><a href="tel:(877) 478-2959" class="cta-button">(877) 478-2959</a></strong>. We provide 24/7 emergency service throughout Virginia Beach, Norfolk, Chesapeake, Portsmouth, Suffolk, and Newport News.</p>
             </div>
+
+            <h2>Pre-Season Hurricane Checklist: May-June Preparations</h2>
             
+            <p>The key to hurricane preparedness is starting early. Begin these tasks in May and June, well before the peak hurricane season (August-October):</p>
             
-            <!-- Article Body -->
-            <div class="article-body">
-                    
-                    <!-- Introduction -->
-                    <section class="article-section">
-                        <p class="lead">Living in Virginia Beach means dealing with hurricane season from June through November. With our coastal location and proximity to the Atlantic Ocean, proper hurricane preparation isn't just recommended—it's essential for protecting your home, family, and investment.</p>
-                        
-                        <p>As experienced handymen serving the Hampton Roads area since 2015, we've helped thousands of homeowners prepare for and recover from major storms including Hurricane Isabel (2003), Hurricane Irene (2011), and Hurricane Sandy (2012). This comprehensive guide shares our professional expertise to help you storm-proof your home and minimize potential damage.</p>
-                        
-                        <div class="highlight-box">
-                            <h3>🚨 Emergency Contact Information</h3>
-                            <p>For immediate hurricane preparation or emergency repairs, call Bob's Jobs at <strong><a href="tel:(877) 478-2959">(877) 478-2959</a></strong>. We provide 24/7 emergency service throughout Virginia Beach, Norfolk, Chesapeake, Portsmouth, Suffolk, and Newport News.</p>
-                        </div>
-                    </section>
-                    
-                    <div class="section-divider"></div>
+            <h3>Exterior Home Inspection</h3>
+            <ul>
+                <li><strong>Roof Assessment:</strong> Check for loose or damaged shingles, missing flashing, and clogged gutters</li>
+                <li><strong>Siding Inspection:</strong> Look for loose panels, cracks, or gaps that could allow water infiltration</li>
+                <li><strong>Window and Door Seals:</strong> Test all weatherstripping and caulking around openings</li>
+                <li><strong>Foundation Review:</strong> Identify any cracks or settling issues that could worsen during storms</li>
+                <li><strong>Tree Maintenance:</strong> Trim branches within 10 feet of your home and remove dead trees</li>
+            </ul>
 
-                    <!-- Pre-Season Checklist -->
-                    <section class="article-section">
-                        <h2>Pre-Season Hurricane Checklist: May-June Preparations</h2>
-                        
-                        <p>The key to hurricane preparedness is starting early. Begin these tasks in May and June, well before the peak hurricane season (August-October):</p>
-                        
-                        <h3>Exterior Home Inspection</h3>
-                        <ul class="checklist">
-                            <li><strong>Roof Assessment:</strong> Check for loose or damaged shingles, missing flashing, and clogged gutters</li>
-                            <li><strong>Siding Inspection:</strong> Look for loose panels, cracks, or gaps that could allow water infiltration</li>
-                            <li><strong>Window and Door Seals:</strong> Test all weatherstripping and caulking around openings</li>
-                            <li><strong>Foundation Review:</strong> Identify any cracks or settling issues that could worsen during storms</li>
-                            <li><strong>Tree Maintenance:</strong> Trim branches within 10 feet of your home and remove dead trees</li>
-                        </ul>
-                        
-                        <h3>Drainage and Water Management</h3>
-                        <p>Virginia Beach's flat topography and proximity to water bodies make proper drainage critical:</p>
-                        <ul class="checklist">
-                            <li><strong>Clean All Gutters:</strong> Remove debris and ensure proper water flow to downspouts</li>
-                            <li><strong>Inspect Downspouts:</strong> Verify they direct water at least 6 feet away from foundation</li>
-                            <li><strong>Check Storm Drains:</strong> Clear debris from street drains near your property</li>
-                            <li><strong>Grade Assessment:</strong> Ensure soil slopes away from your home's foundation</li>
-                        </ul>
-                        
-                        <div class="pro-tip">
-                            <h4>💡 Professional Tip</h4>
-                            <p>Install French drains or sump pumps if your home is in a flood-prone area. Many Virginia Beach neighborhoods, especially near the Chesapeake Bay, benefit from these preventive measures.</p>
-                        </div>
-                    </section>
-                    
-                    <div class="section-divider"></div>
+            <h3>Drainage and Water Management</h3>
+            <p>Virginia Beach's flat topography and proximity to water bodies make proper drainage critical:</p>
+            <ul>
+                <li><strong>Clean All Gutters:</strong> Remove debris and ensure proper water flow to downspouts</li>
+                <li><strong>Inspect Downspouts:</strong> Verify they direct water at least 6 feet away from foundation</li>
+                <li><strong>Check Storm Drains:</strong> Clear debris from street drains near your property</li>
+                <li><strong>Grade Assessment:</strong> Ensure soil slopes away from your home's foundation</li>
+            </ul>
 
-                    <!-- Storm-Proofing Your Home -->
-                    <section class="article-section">
-                        <h2>Storm-Proofing Your Home: Essential Handyman Tasks</h2>
-                        
-                        <h3>Window Protection Systems</h3>
-                        <p>Windows are your home's most vulnerable points during hurricanes. Here are professional-grade protection options:</p>
-                        
-                        <h4>Plywood Boarding (Budget Option)</h4>
-                        <ul>
-                            <li>Use 5/8" exterior-grade plywood minimum</li>
-                            <li>Pre-cut and label pieces for quick installation</li>
-                            <li>Install with 2.5" galvanized screws every 12 inches</li>
-                            <li>Store hardware in labeled bags for each window</li>
-                        </ul>
-                        
-                        <h4>Hurricane Shutters (Recommended)</h4>
-                        <ul>
-                            <li><strong>Roll-down shutters:</strong> Most convenient but highest cost ($15-25 per sq ft)</li>
-                            <li><strong>Accordion shutters:</strong> Good balance of cost and convenience ($8-15 per sq ft)</li>
-                            <li><strong>Colonial shutters:</strong> Aesthetic appeal with storm protection ($10-20 per sq ft)</li>
-                            <li><strong>Storm panels:</strong> Removable aluminum or steel panels ($2-7 per sq ft)</li>
-                        </ul>
-                        
-                        <h3>Roof Reinforcement</h3>
-                        <p>Your roof is your home's first line of defense. Critical reinforcement areas include:</p>
-                        
-                        <h4>Shingle and Tile Security</h4>
-                        <ul>
-                            <li>Replace loose or damaged shingles immediately</li>
-                            <li>Install hurricane straps connecting roof trusses to walls</li>
-                            <li>Use roofing cement to secure loose shingle edges</li>
-                            <li>Install drip edge and ice dam protection</li>
-                        </ul>
-                        
-                        <h4>Gutter Reinforcement</h4>
-                        <ul>
-                            <li>Install gutter guards to prevent clogging</li>
-                            <li>Reinforce gutter hangers with heavy-duty brackets</li>
-                            <li>Seal all joints with professional-grade sealant</li>
-                            <li>Consider seamless gutters for better storm resistance</li>
-                        </ul>
-                        
-                        <div class="warning-box">
-                            <h4>⚠️ Safety Warning</h4>
-                            <p>Roof work can be extremely dangerous. For repairs above single-story height or complex installations, always hire licensed professionals. Bob's Jobs provides full roof inspection and repair services.</p>
-                        </div>
-                    </section>
-                    
-                    <div class="section-divider"></div>
+            <h2>Storm-Proofing Your Home: Essential Handyman Tasks</h2>
+            
+            <h3>Window Protection Systems</h3>
+            <p>Windows are your home's most vulnerable points during hurricanes. Here are professional-grade protection options:</p>
+            
+            <h3>Plywood Boarding (Budget Option)</h3>
+            <ul>
+                <li>Use 5/8" exterior-grade plywood minimum</li>
+                <li>Pre-cut and label pieces for quick installation</li>
+                <li>Install with 2.5" galvanized screws every 12 inches</li>
+                <li>Store hardware in labeled bags for each window</li>
+            </ul>
 
-                    <!-- Emergency Supply Kit -->
-                    <section class="article-section">
-                        <h2>Emergency Home Repair Supply Kit</h2>
-                        
-                        <p>Having the right tools and materials on hand can mean the difference between minor repairs and major damage. Here's our professional emergency kit checklist:</p>
-                        
-                        <h3>Essential Tools</h3>
-                        <div class="two-column-list">
-                            <div class="column">
-                                <ul>
-                                    <li>Cordless drill with extra batteries</li>
-                                    <li>Circular saw (battery-powered preferred)</li>
-                                    <li>Hammer (16 oz claw hammer)</li>
-                                    <li>Utility knife with extra blades</li>
-                                    <li>Adjustable wrench set</li>
-                                    <li>Screwdriver set (Phillips and flathead)</li>
-                                    <li>Level (2-foot and 4-foot)</li>
-                                </ul>
-                            </div>
-                            <div class="column">
-                                <ul>
-                                    <li>Measuring tape (25-foot)</li>
-                                    <li>Safety glasses and work gloves</li>
-                                    <li>Headlamp and flashlights</li>
-                                    <li>Extension cords (outdoor rated)</li>
-                                    <li>Plastic sheeting (6-mil thick)</li>
-                                    <li>Duct tape (multiple rolls)</li>
-                                    <li>Rope and bungee cords</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <h3>Materials and Fasteners</h3>
-                        <div class="two-column-list">
-                            <div class="column">
-                                <ul>
-                                    <li>Plywood sheets (5/8" exterior grade)</li>
-                                    <li>2x4 lumber (pressure treated)</li>
-                                    <li>Galvanized screws (various lengths)</li>
-                                    <li>Roofing cement and caulk</li>
-                                    <li>Weatherstripping</li>
-                                </ul>
-                            </div>
-                            <div class="column">
-                                <ul>
-                                    <li>Sandbags or flood barriers</li>
-                                    <li>Generator (properly rated for your needs)</li>
-                                    <li>Fuel stabilizer and extra gas</li>
-                                    <li>Water pump (for flooding)</li>
-                                    <li>Tarps (multiple sizes)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="pro-tip">
-                            <h4>💡 Storage Tip</h4>
-                            <p>Store all emergency supplies in a waterproof container in an easily accessible location. Label everything clearly and check expiration dates on materials annually.</p>
-                        </div>
-                    </section>
-                    
-                    <div class="section-divider"></div>
+            <h3>Hurricane Shutters (Recommended)</h3>
+            <ul>
+                <li><strong>Roll-down shutters:</strong> Most convenient but highest cost ($15-25 per sq ft)</li>
+                <li><strong>Accordion shutters:</strong> Good balance of cost and convenience ($8-15 per sq ft)</li>
+                <li><strong>Colonial shutters:</strong> Aesthetic appeal with storm protection ($10-20 per sq ft)</li>
+                <li><strong>Storm panels:</strong> Removable aluminum or steel panels ($2-7 per sq ft)</li>
+            </ul>
 
-                    <!-- During the Storm -->
-                    <section class="article-section">
-                        <h2>During the Storm: Safety-First Priorities</h2>
-                        
-                        <p>When a hurricane hits Virginia Beach, your safety is the top priority. However, there are some immediate actions you can take to minimize damage:</p>
-                        
-                        <h3>Interior Monitoring</h3>
-                        <ul class="safety-list">
-                            <li>Monitor for leaks around windows and doors</li>
-                            <li>Place buckets and towels near known weak spots</li>
-                            <li>Keep flashlights and battery-powered radio nearby</li>
-                            <li>Avoid using candles due to fire risk</li>
-                            <li>Stay away from windows and glass doors</li>
-                        </ul>
-                        
-                        <h3>Emergency Water Intrusion Response</h3>
-                        <ul class="safety-list">
-                            <li>Turn off electricity to affected areas if safe to do so</li>
-                            <li>Document damage with photos for insurance</li>
-                            <li>Use plastic sheeting to redirect water flow</li>
-                            <li>Move valuables to higher, dry areas</li>
-                            <li>Never attempt exterior repairs during the storm</li>
-                        </ul>
-                        
-                        <div class="warning-box">
-                            <h4>⚠️ Critical Safety Reminder</h4>
-                            <p>Never go outside during hurricane conditions. Wind speeds can exceed 100 mph, and flying debris can be fatal. Wait for official all-clear signals before venturing outdoors.</p>
-                        </div>
-                    </section>
-
-                    <!-- Post-Storm Assessment -->
-                    <section class="article-section">
-                        <h2>Post-Storm Assessment & Immediate Repairs</h2>
-                        
-                        <p>After a hurricane passes through Virginia Beach, systematic damage assessment is crucial for preventing secondary damage and beginning recovery:</p>
-                        
-                        <h3>Exterior Assessment Priority Order</h3>
-                        <ol class="priority-list">
-                            <li><strong>Structural Integrity:</strong> Check for foundation cracks, wall damage, or roof collapse</li>
-                            <li><strong>Water Intrusion Points:</strong> Identify all areas where water entered the home</li>
-                            <li><strong>Roof Damage:</strong> Look for missing shingles, damaged flashing, or punctures</li>
-                            <li><strong>Window and Door Damage:</strong> Check for broken glass or compromised seals</li>
-                            <li><strong>Siding and Exterior Walls:</strong> Identify loose panels or impact damage</li>
-                            <li><strong>Utility Connections:</strong> Inspect electrical, gas, and water service connections</li>
-                        </ol>
-                        
-                        <h3>Immediate Temporary Repairs</h3>
-                        <p>These quick fixes can prevent further damage while you arrange professional repairs:</p>
-                        
-                        <h4>Roof Leak Temporary Fixes</h4>
-                        <ul>
-                            <li>Apply roofing cement to small holes or cracks</li>
-                            <li>Cover larger areas with tarps secured with sandbags</li>
-                            <li>Use plastic sheeting inside attic to redirect water</li>
-                            <li>Clear debris from gutters to restore drainage</li>
-                        </ul>
-                        
-                        <h4>Window Protection</h4>
-                        <ul>
-                            <li>Cover broken windows with plywood immediately</li>
-                            <li>Use plastic sheeting and tape for small cracks</li>
-                            <li>Board up any compromised openings to prevent further damage</li>
-                            <li>Document all damage with photos before repairs</li>
-                        </ul>
-                        
-                        <div class="highlight-box">
-                            <h3>📞 Emergency Repair Contact</h3>
-                            <p>For immediate post-storm emergency repairs, Bob's Jobs offers 24/7 service. We can provide emergency board-up, temporary roofing, water extraction, and damage assessment. Call <strong><a href="tel:(877) 478-2959">(877) 478-2959</a></strong> immediately after it's safe to make the call.</p>
-                        </div>
-                    </section>
-
-                    <!-- Professional vs DIY -->
-                    <section class="article-section">
-                        <h2>When to Call Professional Help vs. DIY Repairs</h2>
-                        
-                        <p>Knowing when to tackle repairs yourself and when to call professionals can save time, money, and prevent injury:</p>
-                        
-                        <h3>Safe DIY Hurricane Repairs</h3>
-                        <div class="diy-safe">
-                            <ul>
-                                <li>Cleaning debris from gutters (single-story only)</li>
-                                <li>Applying weatherstripping to doors and windows</li>
-                                <li>Installing window protection (plywood boarding)</li>
-                                <li>Minor caulking and sealing work</li>
-                                <li>Securing loose siding panels</li>
-                                <li>Clearing storm drains and drainage areas</li>
-                                <li>Interior water damage cleanup (minor)</li>
-                            </ul>
-                        </div>
-                        
-                        <h3>Professional-Only Hurricane Repairs</h3>
-                        <div class="professional-only">
-                            <ul>
-                                <li>Any electrical work or power line issues</li>
-                                <li>Roof repairs above single-story height</li>
-                                <li>Structural damage to walls, foundations, or framing</li>
-                                <li>Gas line repairs or connections</li>
-                                <li>Major plumbing repairs or sewer issues</li>
-                                <li>Extensive water damage restoration</li>
-                                <li>Hurricane shutter installation</li>
-                                <li>Tree removal near power lines</li>
-                            </ul>
-                        </div>
-                        
-                        <h3>Cost Considerations</h3>
-                        <p>While DIY repairs save labor costs, consider these factors:</p>
-                        <ul>
-                            <li><strong>Insurance Coverage:</strong> Many policies require professional repairs for claims</li>
-                            <li><strong>Safety Risks:</strong> Injury costs far exceed professional repair costs</li>
-                            <li><strong>Code Compliance:</strong> Professional work ensures building code compliance</li>
-                            <li><strong>Warranty:</strong> Professional work includes warranties and guarantees</li>
-                            <li><strong>Resale Value:</strong> Proper professional repairs maintain home value</li>
-                        </ul>
-                    </section>
-
-                    <!-- Bob's Jobs Emergency Services -->
-                    <section class="article-section">
-                        <h2>Bob's Jobs Hurricane Response Services</h2>
-                        
-                        <p>Since 2015, Bob's Jobs has been Virginia Beach's trusted hurricane preparation and recovery partner. Our comprehensive services include:</p>
-                        
-                        <h3>Pre-Season Preparation Services</h3>
-                        <div class="services-grid">
-                            <div class="service-item">
-                                <h4>🔧 Home Hurricane Assessment</h4>
-                                <p>Complete inspection of your home's storm readiness with detailed report and priority recommendations.</p>
-                            </div>
-                            <div class="service-item">
-                                <h4>🏠 Hurricane Shutter Installation</h4>
-                                <p>Professional installation of all types of hurricane shutters, from budget-friendly panels to premium roll-down systems.</p>
-                            </div>
-                            <div class="service-item">
-                                <h4>🌧️ Roof & Gutter Reinforcement</h4>
-                                <p>Strengthen your roof's storm resistance with professional-grade materials and techniques.</p>
-                            </div>
-                            <div class="service-item">
-                                <h4>💧 Drainage Solutions</h4>
-                                <p>Install French drains, sump pumps, and improve yard grading to prevent flooding.</p>
-                            </div>
-                        </div>
-                        
-                        <h3>Emergency Response Services</h3>
-                        <div class="services-grid">
-                            <div class="service-item">
-                                <h4>🚨 24/7 Emergency Board-Up</h4>
-                                <p>Immediate protection for compromised windows, doors, and openings after storm damage.</p>
-                            </div>
-                            <div class="service-item">
-                                <h4>🏗️ Emergency Roof Repairs</h4>
-                                <p>Temporary and permanent roof repairs to prevent further water damage to your home.</p>
-                            </div>
-                            <div class="service-item">
-                                <h4>💦 Water Damage Mitigation</h4>
-                                <p>Rapid response water extraction and drying to prevent mold and structural damage.</p>
-                            </div>
-                            <div class="service-item">
-                                <h4>⚡ Generator Installation & Repair</h4>
-                                <p>Keep your power on during outages with professional generator services.</p>
-                            </div>
-                        </div>
-                        
-                        <h3>Recovery & Restoration</h3>
-                        <ul>
-                            <li>Complete damage assessment and repair planning</li>
-                            <li>Insurance claim support and documentation</li>
-                            <li>Full home restoration services</li>
-                            <li>Preventive improvements to reduce future storm damage</li>
-                        </ul>
-                        
-                        <div class="cta-section">
-                            <h3>🏆 Why Choose Bob's Jobs for Hurricane Services?</h3>
-                            <ul>
-                                <li><strong>Local Expertise:</strong> 10+ years serving Hampton Roads hurricane preparation and recovery</li>
-                                <li><strong>Licensed & Insured:</strong> Full Virginia contractor licensing and comprehensive insurance</li>
-                                <li><strong>24/7 Emergency Response:</strong> Available when you need us most</li>
-                                <li><strong>All-In-One Service:</strong> From preparation through complete restoration</li>
-                                <li><strong>Insurance Partnerships:</strong> Work directly with your insurance company</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <!-- Local Considerations -->
-                    <section class="article-section">
-                        <h2>Virginia Beach Specific Storm Considerations</h2>
-                        
-                        <h3>Geographic Vulnerabilities</h3>
-                        <p>Virginia Beach's unique location presents specific challenges during hurricane season:</p>
-                        
-                        <h4>Coastal Flooding</h4>
-                        <ul>
-                            <li><strong>Storm Surge:</strong> Oceanfront properties face 6-12 foot storm surges</li>
-                            <li><strong>Back-Bay Flooding:</strong> Chesapeake Bay side experiences significant flooding</li>
-                            <li><strong>Lynnhaven River:</strong> Properties along waterways need special flood preparation</li>
-                        </ul>
-                        
-                        <h4>Wind Exposure</h4>
-                        <ul>
-                            <li><strong>Oceanfront Winds:</strong> Direct Atlantic exposure to hurricane-force winds</li>
-                            <li><strong>Funnel Effects:</strong> High-rise buildings create wind tunnels</li>
-                            <li><strong>Salt Air Corrosion:</strong> Coastal environment accelerates material deterioration</li>
-                        </ul>
-                        
-                        <h3>Neighborhood-Specific Preparations</h3>
-                        
-                        <h4>Oceanfront/Resort Area</h4>
-                        <ul>
-                            <li>Mandatory evacuation zones during major storms</li>
-                            <li>Sand infiltration protection needed</li>
-                            <li>Hurricane-rated windows essential</li>
-                            <li>Elevated foundation considerations</li>
-                        </ul>
-                        
-                        <h4>Chesapeake Bay Area</h4>
-                        <ul>
-                            <li>Back-bay flooding from storm surge</li>
-                            <li>Boat and dock security measures</li>
-                            <li>Marsh gas evacuation during storms</li>
-                            <li>Waterfront property special concerns</li>
-                        </ul>
-                        
-                        <h4>Inland Neighborhoods</h4>
-                        <ul>
-                            <li>Tree damage from mature canopy</li>
-                            <li>Poor drainage in older developments</li>
-                            <li>Power outage duration considerations</li>
-                            <li>Access road flooding issues</li>
-                        </ul>
-                        
-                        <div class="local-tip">
-                            <h4>🌊 Local Knowledge</h4>
-                            <p>Virginia Beach flood zones have changed significantly since Hurricane Isabel. Check current FEMA flood maps and consider flood insurance even if not required. Many areas that weren't flood zones in 2003 are now designated flood areas.</p>
-                        </div>
-                    </section>
-
-                    <!-- FAQ Section -->
-                    <section class="article-section">
-                        <h2>Frequently Asked Questions: Hurricane Preparation Virginia Beach</h2>
-                        
-                        <div class="faq-container">
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>When should I start preparing my Virginia Beach home for hurricane season?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Begin preparations in May before hurricane season officially starts June 1st. This gives you time to complete inspections, order materials, and schedule professional services before the rush. Peak season runs August through October, so early preparation is crucial.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>How much does it cost to hurricane-proof a Virginia Beach home?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Costs vary widely based on home size and current condition. Budget $2,000-8,000 for basic hurricane shutters, $500-2,000 for roof reinforcement, and $1,000-5,000 for drainage improvements. Professional assessment helps prioritize spending for maximum protection.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>What type of hurricane shutters work best in Virginia Beach?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>For Virginia Beach's coastal conditions, accordion shutters or roll-down shutters work best. They resist salt air corrosion and provide quick deployment. Colonial shutters offer aesthetic appeal but require more maintenance. Plywood is budget-friendly but labor-intensive to install.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>Should I evacuate or shelter in place during a Virginia Beach hurricane?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Always follow official evacuation orders. Oceanfront and low-lying areas typically require evacuation for Category 2+ storms. Inland areas with properly prepared homes may shelter in place for weaker storms, but have evacuation plans ready. Never ignore official evacuation orders.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>How do I protect my Virginia Beach home from flooding?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Install sump pumps, French drains, and improve yard grading. Elevate utilities above flood level. Use flood barriers or sandbags for temporary protection. Consider flood insurance - many Virginia Beach areas now require it due to changing flood zones since Hurricane Isabel.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>What's the best generator size for my Virginia Beach home during hurricanes?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>A 7,500-12,000 watt generator handles essential systems (refrigerator, lights, sump pump, well pump). Whole-house generators (20,000+ watts) power everything but cost $10,000-15,000 installed. Calculate your actual needs and budget accordingly.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>How often should I inspect my hurricane preparations?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Conduct full inspections twice yearly - early May and after hurricane season ends. Monthly checks during hurricane season for weather stripping, drainage, and supply kits. After each storm threat, inspect and refresh supplies and check equipment operation.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>What should I do immediately after a hurricane hits Virginia Beach?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Wait for official all-clear before going outside. Check for gas leaks, electrical damage, and structural issues. Document damage with photos for insurance. Make temporary repairs to prevent further damage. Contact emergency services for serious issues and your insurance company promptly.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>Does homeowners insurance cover hurricane damage in Virginia Beach?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Standard homeowners insurance covers wind damage but typically excludes flood damage. You need separate flood insurance for storm surge and flooding. Review your policy annually and consider increasing coverage limits. Some policies have separate hurricane deductibles.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>How long do hurricane shutters last in Virginia Beach's coastal environment?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Quality aluminum shutters last 15-20 years with proper maintenance. Steel shutters need repainting every 5-7 years to prevent rust. Roll-down systems require annual lubrication and inspection. Plywood should be replaced every 2-3 seasons or after any storm use.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>What trees should I remove to hurricane-proof my Virginia Beach property?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Remove dead, diseased, or damaged trees immediately. Trim branches within 10 feet of your home. Consider removing large trees with shallow root systems near the house. Pine trees are particularly vulnerable to hurricane winds in our area. Consult arborists for mature tree assessment.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>Should I turn off utilities before a hurricane in Virginia Beach?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Turn off electricity to prevent electrical fires if flooding is expected. Leave gas on unless you smell leaks - turning it back on requires professional service. Keep water on for emergency use unless contamination is reported. Know the location of all utility shut-offs.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>How do I prevent mold after hurricane water damage in Virginia Beach?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Remove standing water within 24-48 hours. Use fans and dehumidifiers to dry affected areas quickly. Remove water-damaged materials like carpet and drywall. Clean and disinfect all surfaces with bleach solution. Virginia Beach's humidity makes rapid response critical to prevent mold growth.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>What's the most common hurricane damage in Virginia Beach homes?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Roof damage from wind and flying debris is most common, followed by water intrusion through compromised windows and doors. Flooding from storm surge affects oceanfront and bayside properties. Tree damage to structures and power lines causes extended outages throughout the area.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <h3>When should I call Bob's Jobs for hurricane preparation help?</h3>
-                                    <span class="faq-toggle">+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Contact us in early spring for hurricane assessments and major installations. Call immediately when a hurricane threatens for emergency board-up services. We provide 24/7 emergency response during storm season and comprehensive preparation services year-round. Early booking ensures availability during peak season.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Conclusion -->
-                    <section class="article-section">
-                        <h2>Protecting Your Virginia Beach Home Investment</h2>
-                        
-                        <p>Hurricane preparation isn't just about immediate safety—it's about protecting your most significant investment. A well-prepared home sustains less damage, recovers faster, and maintains its value through storm seasons. The relatively small investment in proper preparation pays dividends in avoided damage, lower insurance premiums, and peace of mind.</p>
-                        
-                        <p>Virginia Beach's unique coastal environment requires specialized knowledge and experience. Since 2015, Bob's Jobs has helped thousands of Hampton Roads homeowners prepare for and recover from major storms. Our team understands the specific challenges facing Virginia Beach properties and provides tailored solutions for each situation.</p>
-                        
-                        <div class="final-cta">
-                            <h3>Ready to Hurricane-Proof Your Virginia Beach Home?</h3>
-                            <p>Don't wait until the next hurricane watch is issued. Contact Bob's Jobs today for a comprehensive hurricane preparation assessment. We'll identify your home's vulnerabilities and create a prioritized action plan to keep your family and property safe.</p>
-                            
-                            <div class="cta-buttons">
-                                <a href="tel:(877) 478-2959" class="cta-primary">Call (877) 478-2959</a>
-                                <a href="../index.html" class="cta-secondary">Request Assessment</a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+            <div class="highlight-box">
+                <h3>📞 Ready to Hurricane-Proof Your Home?</h3>
+                <p>Don't wait until the next hurricane watch is issued. Contact Bob's Jobs today for a comprehensive hurricane preparation assessment.</p>
+                <a href="tel:(877) 478-2959" class="cta-button">Call (877) 478-2959</a>
             </div>
+
+            <h2>Emergency Home Repair Supply Kit</h2>
+            
+            <p>Having the right tools and materials on hand can mean the difference between minor repairs and major damage. Here's our professional emergency kit checklist:</p>
+            
+            <h3>Essential Tools</h3>
+            <ul>
+                <li>Cordless drill with extra batteries</li>
+                <li>Circular saw (battery-powered preferred)</li>
+                <li>Hammer (16 oz claw hammer)</li>
+                <li>Utility knife with extra blades</li>
+                <li>Adjustable wrench set</li>
+                <li>Screwdriver set (Phillips and flathead)</li>
+                <li>Level (2-foot and 4-foot)</li>
+                <li>Measuring tape (25-foot)</li>
+                <li>Safety glasses and work gloves</li>
+                <li>Headlamp and flashlights</li>
+                <li>Extension cords (outdoor rated)</li>
+                <li>Plastic sheeting (6-mil thick)</li>
+                <li>Duct tape (multiple rolls)</li>
+                <li>Rope and bungee cords</li>
+            </ul>
+
+            <h3>Materials and Fasteners</h3>
+            <ul>
+                <li>Plywood sheets (5/8" exterior grade)</li>
+                <li>2x4 lumber (pressure treated)</li>
+                <li>Galvanized screws (various lengths)</li>
+                <li>Roofing cement and caulk</li>
+                <li>Weatherstripping</li>
+                <li>Sandbags or flood barriers</li>
+                <li>Generator (properly rated for your needs)</li>
+                <li>Fuel stabilizer and extra gas</li>
+                <li>Water pump (for flooding)</li>
+                <li>Tarps (multiple sizes)</li>
+            </ul>
+
+            <h2>Post-Storm Assessment & Immediate Repairs</h2>
+            
+            <p>After a hurricane passes through Virginia Beach, systematic damage assessment is crucial for preventing secondary damage and beginning recovery:</p>
+            
+            <h3>Exterior Assessment Priority Order</h3>
+            <ol>
+                <li><strong>Structural Integrity:</strong> Check for foundation cracks, wall damage, or roof collapse</li>
+                <li><strong>Water Intrusion Points:</strong> Identify all areas where water entered the home</li>
+                <li><strong>Roof Damage:</strong> Look for missing shingles, damaged flashing, or punctures</li>
+                <li><strong>Window and Door Damage:</strong> Check for broken glass or compromised seals</li>
+                <li><strong>Siding and Exterior Walls:</strong> Identify loose panels or impact damage</li>
+                <li><strong>Utility Connections:</strong> Inspect electrical, gas, and water service connections</li>
+            </ol>
+
+            <h3>When to Call Professional Help</h3>
+            <p>Knowing when to tackle repairs yourself and when to call professionals can save time, money, and prevent injury:</p>
+            
+            <h3>Professional-Only Hurricane Repairs</h3>
+            <ul>
+                <li>Any electrical work or power line issues</li>
+                <li>Roof repairs above single-story height</li>
+                <li>Structural damage to walls, foundations, or framing</li>
+                <li>Gas line repairs or connections</li>
+                <li>Major plumbing repairs or sewer issues</li>
+                <li>Extensive water damage restoration</li>
+                <li>Hurricane shutter installation</li>
+                <li>Tree removal near power lines</li>
+            </ul>
+
+            <h2>Bob's Jobs Hurricane Response Services</h2>
+            
+            <p>Since 2015, Bob's Jobs has been Virginia Beach's trusted hurricane preparation and recovery partner. Our comprehensive services include:</p>
+            
+            <h3>Pre-Season Preparation Services</h3>
+            <ul>
+                <li><strong>🔧 Home Hurricane Assessment:</strong> Complete inspection with detailed report and priority recommendations</li>
+                <li><strong>🏠 Hurricane Shutter Installation:</strong> Professional installation of all types of hurricane shutters</li>
+                <li><strong>🌧️ Roof & Gutter Reinforcement:</strong> Strengthen your roof's storm resistance</li>
+                <li><strong>💧 Drainage Solutions:</strong> Install French drains, sump pumps, and improve yard grading</li>
+            </ul>
+
+            <h3>Emergency Response Services</h3>
+            <ul>
+                <li><strong>🚨 24/7 Emergency Board-Up:</strong> Immediate protection for compromised openings</li>
+                <li><strong>🏗️ Emergency Roof Repairs:</strong> Temporary and permanent roof repairs</li>
+                <li><strong>💦 Water Damage Mitigation:</strong> Rapid response water extraction and drying</li>
+                <li><strong>⚡ Generator Installation & Repair:</strong> Keep your power on during outages</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>🏆 Why Choose Bob's Jobs for Hurricane Services?</h3>
+                <ul>
+                    <li><strong>Local Expertise:</strong> 10+ years serving Hampton Roads hurricane preparation and recovery</li>
+                    <li><strong>Licensed & Insured:</strong> Full Virginia contractor licensing and comprehensive insurance</li>
+                    <li><strong>24/7 Emergency Response:</strong> Available when you need us most</li>
+                    <li><strong>All-In-One Service:</strong> From preparation through complete restoration</li>
+                    <li><strong>Insurance Partnerships:</strong> Work directly with your insurance company</li>
+                </ul>
+                <p style="text-align: center; margin-top: 2rem;">
+                    <a href="tel:(877) 478-2959" class="cta-button">Call (877) 478-2959 Now</a>
+                </p>
+            </div>
+
+            <h2>Protecting Your Virginia Beach Home Investment</h2>
+            
+            <p>Hurricane preparation isn't just about immediate safety—it's about protecting your most significant investment. A well-prepared home sustains less damage, recovers faster, and maintains its value through storm seasons.</p>
+            
+            <p>Virginia Beach's unique coastal environment requires specialized knowledge and experience. Since 2015, Bob's Jobs has helped thousands of Hampton Roads homeowners prepare for and recover from major storms. Our team understands the specific challenges facing Virginia Beach properties and provides tailored solutions for each situation.</p>
+            
+            <p><strong>Don't wait until the next hurricane watch is issued.</strong> Contact Bob's Jobs today for a comprehensive hurricane preparation assessment. We'll identify your home's vulnerabilities and create a prioritized action plan to keep your family and property safe.</p>
         </div>
-    </article>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1226,34 +404,5 @@
             </div>
         </div>
     </footer>
-
-    <!-- FAQ Toggle Functionality -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                const answer = item.querySelector('.faq-answer');
-                const toggle = item.querySelector('.faq-toggle');
-                
-                question.addEventListener('click', function() {
-                    const isActive = item.classList.contains('active');
-                    
-                    // Close all other FAQ items
-                    faqItems.forEach(otherItem => {
-                        otherItem.classList.remove('active');
-                        otherItem.querySelector('.faq-toggle').textContent = '+';
-                    });
-                    
-                    // Toggle current item
-                    if (!isActive) {
-                        item.classList.add('active');
-                        toggle.textContent = '−';
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
