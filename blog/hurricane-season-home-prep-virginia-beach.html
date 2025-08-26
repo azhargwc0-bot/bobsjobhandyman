@@ -9,6 +9,299 @@
     <link rel="canonical" href="https://bobsjobshandyman.com/blog/hurricane-season-home-prep-virginia-beach.html">
     <link rel="stylesheet" href="../styles.css?v=2.9">
     
+    <!-- Custom Blog Post Styling -->
+    <style>
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .blog-article {
+            background: #f8f9fa;
+            padding: 3rem 0;
+            min-height: 100vh;
+        }
+        
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .article-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .article-section h2 {
+            color: #1a365d;
+            border-bottom: 3px solid #2b6cb0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .article-section h3 {
+            color: #2c5282;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .article-section h4 {
+            color: #2c5282;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+        
+        .lead {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #2b6cb0;
+            padding-left: 1rem;
+            background: #f7fafc;
+            padding: 1rem 1rem 1rem 1.5rem;
+            border-radius: 6px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .checklist, .safety-list, .priority-list {
+            background: #f7fafc;
+            border-left: 4px solid #48bb78;
+            padding: 1rem 1rem 1rem 2rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+        }
+        
+        .checklist li, .safety-list li, .priority-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        
+        .two-column-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        
+        .pro-tip, .local-tip {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #fdcb6e;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+        
+        .pro-tip h4, .local-tip h4 {
+            color: #e17055;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .warning-box {
+            background: #fee;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box h4 {
+            color: #dc2626;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .service-item {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-item h4 {
+            color: #2b6cb0;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .cta-section h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .final-cta {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        
+        .cta-primary {
+            background: #2b6cb0;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-primary:hover {
+            background: #2c5282;
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: #2b6cb0;
+            padding: 0.75rem 2rem;
+            border: 2px solid #2b6cb0;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: #2b6cb0;
+            color: white;
+        }
+        
+        .faq-container {
+            margin-top: 2rem;
+        }
+        
+        .faq-item {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.25rem;
+            background: #f7fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #edf2f7;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            color: #1a365d;
+            font-size: 1.1rem;
+        }
+        
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+        
+        .faq-answer {
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 1.25rem;
+            max-height: 500px;
+        }
+        
+        .breadcrumbs {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumbs a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumbs a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .article-content {
+                margin: 0 1rem;
+                padding: 2rem 1.5rem;
+            }
+            
+            .two-column-list {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -40,83 +333,58 @@
     </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="header-top">
-                <div class="contact-info">
-                    <a href="tel:(877) 478-2959" class="header-phone">
-                        <span class="phone-icon">📞</span>
-                        <span>(877) 478-2959</span>
-                    </a>
-                    <span class="header-divider">|</span>
-                    <span class="service-hours">24/7 Emergency Service Available</span>
-                </div>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: inherit; text-decoration: none;">Bob's Jobs</a></h1>
+                <span>Handyman</span>
             </div>
-            
-            <div class="header-main">
-                <div class="brand">
-                    <h1><a href="../index.html">Bob's Jobs</a></h1>
-                    <span class="tagline">Professional Handyman Services</span>
+            <div class="nav-menu">
+                <div class="nav-dropdown-container">
+                    <a href="#services" class="nav-link">Services</a>
+                    <div class="nav-dropdown">
+                        <a href="../emergency-repairs-virginia-beach-va.html" class="nav-link">Emergency Repairs</a>
+                        <a href="../furniture-assembly-virginia-beach-va.html" class="nav-link">Furniture Assembly</a>
+                        <a href="../drywall-repair-virginia-beach-va.html" class="nav-link">Drywall Repair</a>
+                        <a href="../plumbing-repairs-virginia-beach-va.html" class="nav-link">Plumbing Repairs</a>
+                        <a href="../electrical-work-virginia-beach-va.html" class="nav-link">Electrical Work</a>
+                        <a href="../home-maintenance-virginia-beach-va.html" class="nav-link">Home Maintenance</a>
+                        <a href="../carpentry-services-virginia-beach-va.html" class="nav-link">Carpentry Services</a>
+                    </div>
                 </div>
-                
-                <nav class="nav" role="navigation" aria-label="Main navigation">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="../index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item nav-dropdown">
-                            <div class="nav-dropdown-container">
-                                <a href="#" class="nav-link dropdown-toggle">Services <span class="dropdown-arrow">▾</span></a>
-                                <ul class="nav-dropdown-menu">
-                                    <li><a href="../emergency-repairs-virginia-beach-va.html">Emergency Repairs</a></li>
-                                    <li><a href="../furniture-assembly-virginia-beach-va.html">Furniture Assembly</a></li>
-                                    <li><a href="../drywall-repair-virginia-beach-va.html">Drywall Repair</a></li>
-                                    <li><a href="../plumbing-repairs-virginia-beach-va.html">Plumbing Repairs</a></li>
-                                    <li><a href="../electrical-work-virginia-beach-va.html">Electrical Work</a></li>
-                                    <li><a href="../home-maintenance-virginia-beach-va.html">Home Maintenance</a></li>
-                                    <li><a href="../carpentry-services-virginia-beach-va.html">Carpentry Services</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../about-us-virginia-beach-handyman.html" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="tel:(877) 478-2959" class="nav-cta">Get Quote</a>
-                        </li>
-                    </ul>
-                </nav>
+                <a href="../about-us-virginia-beach-handyman.html" class="nav-link">About Us</a>
+                <a href="../faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
+                <a href="index.html" class="nav-link">Blog</a>
+            </div>
+            <a href="tel:(877) 478-2959" class="nav-phone">
+                <span class="phone-icon">📞</span>
+                <span>(877) 478-2959</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a> > <a href="index.html">Blog</a> > <span>Hurricane Preparation</span>
+                </div>
+                <h1 class="hero-title">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
+                <div class="blog-meta">
+                    <span class="publish-date">Published: August 26, 2025</span>
+                    <span class="read-time">12 min read</span>
+                    <span class="author">By Bob's Jobs Handyman Team</span>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero blog-hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a> > <a href="/blog/">Blog</a> > <span>Hurricane Preparation</span>
-                    </div>
-                    <h1 class="hero-title">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
-                    <div class="blog-meta">
-                        <span class="publish-date">Published: August 26, 2025</span>
-                        <span class="read-time">12 min read</span>
-                        <span class="author">By Bob's Jobs Handyman Team</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Article Content -->
-        <article class="blog-article">
-            <div class="container">
-                <div class="article-content">
+    <!-- Article Content -->
+    <article class="blog-article">
+        <div class="container">
+            <div class="article-content">
                     
                     <!-- Introduction -->
                     <section class="article-section">
@@ -684,22 +952,18 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Bob's Jobs Handyman</h3>
-                    <p>Professional handyman services for Virginia Beach, Norfolk, Chesapeake, Portsmouth, Suffolk, Newport News, and surrounding areas since 2015.</p>
+                    <p>Professional home maintenance and handyman services in Virginia Beach, VA. Licensed, insured, and locally trusted since 2015.</p>
                     <div class="footer-contact">
-                        <a href="tel:(877) 478-2959" class="footer-phone">
-                            <span class="phone-icon">📞</span>
-                            <span>(877) 478-2959</span>
-                        </a>
-                        <a href="mailto:info@bobsjobshandyman.com" class="footer-email">info@bobsjobshandyman.com</a>
+                        <p><span class="contact-icon">📞</span> (877) 478-2959</p>
+                        <p><span class="contact-icon">📍</span> Serving Virginia Beach, VA</p>
                     </div>
                 </div>
-                
-                <div class="footer-column">
-                    <h4>Services</h4>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
                     <ul class="footer-links">
                         <li><a href="../emergency-repairs-virginia-beach-va.html">Emergency Repairs</a></li>
                         <li><a href="../furniture-assembly-virginia-beach-va.html">Furniture Assembly</a></li>
@@ -707,46 +971,23 @@
                         <li><a href="../plumbing-repairs-virginia-beach-va.html">Plumbing Repairs</a></li>
                         <li><a href="../electrical-work-virginia-beach-va.html">Electrical Work</a></li>
                         <li><a href="../home-maintenance-virginia-beach-va.html">Home Maintenance</a></li>
-                        <li><a href="../carpentry-services-virginia-beach-va.html">Carpentry Services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Virginia Beach, VA</a></li>
-                        <li><a href="../handyman-norfolk-va.html">Norfolk, VA</a></li>
-                        <li><a href="../handyman-chesapeake-va.html">Chesapeake, VA</a></li>
-                        <li><a href="../handyman-portsmouth-va.html">Portsmouth, VA</a></li>
-                        <li><a href="../handyman-suffolk-va.html">Suffolk, VA</a></li>
-                        <li><a href="../handyman-newport-news-va.html">Newport News, VA</a></li>
-                        <li>Hampton Roads Area</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="../about-us-virginia-beach-handyman.html">About Us</a></li>
-                        <li><a href="../faq-virginia-beach-handyman.html">FAQ</a></li>
                         <li><a href="hurricane-season-home-prep-virginia-beach.html">Hurricane Preparation</a></li>
-                        <li>Reviews & Testimonials</li>
-                        <li>Licensed & Insured</li>
-                        <li>Free Estimates</li>
-                        <li>24/7 Emergency Service</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Areas Served</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Virginia Beach</a></li>
+                        <li><a href="../handyman-chesapeake-va.html">Chesapeake</a></li>
+                        <li><a href="../handyman-norfolk-va.html">Norfolk</a></li>
+                        <li><a href="../handyman-portsmouth-va.html">Portsmouth</a></li>
+                        <li><a href="../handyman-suffolk-va.html">Suffolk</a></li>
+                        <li><a href="../handyman-newport-news-va.html">Newport News</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Bob's Jobs Handyman. All rights reserved. Licensed Virginia Contractor.</p>
-                    <div class="footer-badges">
-                        <span class="badge">Licensed</span>
-                        <span class="badge">Insured</span>
-                        <span class="badge">Bonded</span>
-                    </div>
-                </div>
+                <p>&copy; 2024 Bob's Jobs Handyman Virginia Beach. All rights reserved.</p>
             </div>
         </div>
     </footer>
