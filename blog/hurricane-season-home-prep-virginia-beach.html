@@ -14,13 +14,12 @@
         /* Blog Article Layout matching main site theme */
         .blog-article {
             background: var(--primary-bg, #1a1f36);
-            padding: 0 0 var(--spacing-12, 3rem);
-            min-height: 100vh;
+            padding: var(--spacing-8, 2rem) var(--spacing-4, 1rem) var(--spacing-12, 3rem);
         }
         
         .article-content {
             max-width: 900px;
-            margin: var(--spacing-16, 4rem) auto 0;
+            margin: 0 auto;
             background: var(--card-bg, #2a3458);
             border-radius: 12px;
             box-shadow: var(--shadow, 0 4px 16px rgba(0, 0, 0, 0.2));
@@ -469,8 +468,12 @@
             }
             
             .article-content {
-                margin: var(--spacing-8, 2rem) var(--spacing-4, 1rem) 0;
+                margin: 0 0;
                 border-radius: 8px;
+            }
+            
+            .blog-article {
+                padding: var(--spacing-4, 1rem) var(--spacing-2, 0.5rem) var(--spacing-8, 2rem);
             }
             
             .article-body {
@@ -577,24 +580,22 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="breadcrumbs" style="color: var(--text-secondary); margin-bottom: var(--spacing-6);">
+    <!-- Blog Header Section -->
+    <section style="background: var(--primary-bg); padding: var(--spacing-20) 0 var(--spacing-12); margin-top: 80px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-4);">
+            <div style="max-width: 800px; text-align: center; margin: 0 auto;">
+                <div style="color: var(--text-secondary); margin-bottom: var(--spacing-6); font-size: var(--font-size-sm);">
                     <a href="../index.html" style="color: var(--accent-teal); text-decoration: none;">Home</a> 
                     <span style="color: var(--text-muted); margin: 0 var(--spacing-2);">></span> 
                     <a href="index.html" style="color: var(--accent-teal); text-decoration: none;">Blog</a> 
                     <span style="color: var(--text-muted); margin: 0 var(--spacing-2);">></span> 
                     <span style="color: var(--text-secondary);">Hurricane Preparation</span>
                 </div>
-                <h1 class="hero-title">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
-                <div class="hero-subtitle">
-                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: var(--spacing-6); margin-top: var(--spacing-6); font-size: var(--font-size-base); color: var(--text-secondary);">
-                        <span style="display: flex; align-items: center; gap: var(--spacing-2);">📅 Published: August 26, 2025</span>
-                        <span style="display: flex; align-items: center; gap: var(--spacing-2);">⏱️ 12 min read</span>
-                        <span style="display: flex; align-items: center; gap: var(--spacing-2);">✍️ Bob's Jobs Handyman Team</span>
-                    </div>
+                <h1 style="font-size: var(--font-size-4xl); font-weight: 800; line-height: 1.2; margin-bottom: var(--spacing-6); color: var(--text-primary);">Complete Hurricane Season Home Preparation Guide for Virginia Beach Homeowners</h1>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: var(--spacing-6); font-size: var(--font-size-base); color: var(--text-secondary);">
+                    <span style="display: flex; align-items: center; gap: var(--spacing-2);">📅 Published: August 26, 2025</span>
+                    <span style="display: flex; align-items: center; gap: var(--spacing-2);">⏱️ 12 min read</span>
+                    <span style="display: flex; align-items: center; gap: var(--spacing-2);">✍️ Bob's Jobs Handyman Team</span>
                 </div>
             </div>
         </div>
