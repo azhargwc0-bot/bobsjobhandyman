@@ -138,6 +138,7 @@
                     <div class="stat">
                         <div class="stat-number">Code</div>
                         <div class="stat-label">Compliant</div>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-actions">
@@ -149,6 +150,7 @@
                         <span class="feature">⚡ Licensed Electrician</span>
                         <span class="feature">🔧 Expert Installation</span>
                         <span class="feature">✅ Code Compliant</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,131 +320,181 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq">
         <div class="container">
             <div class="section-header">
-                <h2>Light Fixture Installation Questions & Answers</h2>
-                <p>Common questions about professional lighting installation services in Virginia Beach.</p>
+                <div class="section-badge">Lighting FAQ</div>
+                <h2 class="section-title">Light Fixture Installation Questions</h2>
+                <p class="section-subtitle">
+                    Common questions about professional lighting installation services in Virginia Beach.
+                </p>
             </div>
             
             <div class="faq-container">
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Do I need a licensed electrician for light fixture installation?
-                        <span class="faq-icon">+</span>
-                    </button>
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do I need a licensed electrician for light fixture installation?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>Yes, Virginia electrical codes require licensed electricians for most light fixture installations, especially those involving new circuits or electrical box replacement. This ensures safety, proper installation, and code compliance. DIY electrical work can be dangerous and may void insurance coverage.</p>
+                        <div class="faq-content">
+                            <p>Yes, Virginia electrical codes require licensed electricians for most light fixture installations, especially those involving new circuits or electrical box replacement. This ensures safety, proper installation, and code compliance. DIY electrical work can be dangerous and may void insurance coverage.</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Can you install heavy chandeliers safely?
-                        <span class="faq-icon">+</span>
-                    </button>
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can you install heavy chandeliers safely?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>Absolutely. We specialize in heavy fixture installation with proper ceiling reinforcement. We assess ceiling joists, install appropriate mounting hardware rated for the fixture weight, and ensure secure, safe installation that meets structural requirements.</p>
+                        <div class="faq-content">
+                            <p>Absolutely. We specialize in heavy fixture installation with proper ceiling reinforcement. We assess ceiling joists, install appropriate mounting hardware rated for the fixture weight, and ensure secure, safe installation that meets structural requirements.</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         What's the difference between LED and traditional fixtures?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>LED fixtures use 75-80% less energy, last 15-25 times longer, produce less heat, and offer better light quality. While initial cost is higher, energy savings and longevity make LEDs much more economical long-term, especially in Virginia Beach's year-round usage climate.</p>
+                        <div class="faq-content">
+                            <p>LED fixtures use 75-80% less energy, last 15-25 times longer, produce less heat, and offer better light quality. While initial cost is higher, energy savings and longevity make LEDs much more economical long-term, especially in Virginia Beach's year-round usage climate.</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         Can you install dimmer switches with new fixtures?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>Yes, we install dimmer switches compatible with your fixtures. LED fixtures require specific LED-rated dimmers. Dimmer installation provides ambiance control, energy savings, and extended bulb life. We ensure proper dimmer-fixture compatibility.</p>
+                        <div class="faq-content">
+                            <p>Yes, we install dimmer switches compatible with your fixtures. LED fixtures require specific LED-rated dimmers. Dimmer installation provides ambiance control, energy savings, and extended bulb life. We ensure proper dimmer-fixture compatibility.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         How do you handle outdoor lighting in coastal conditions?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>We use marine-grade fixtures and corrosion-resistant materials designed for salt air exposure. All outdoor installations include GFCI protection, weatherproof connections, and fixtures rated for wet locations. Proper sealing prevents moisture intrusion.</p>
+                        <div class="faq-content">
+                            <p>We use marine-grade fixtures and corrosion-resistant materials designed for salt air exposure. All outdoor installations include GFCI protection, weatherproof connections, and fixtures rated for wet locations. Proper sealing prevents moisture intrusion.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         Can you install recessed lights in existing ceilings?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>Yes, we install recessed lights in existing ceilings using remodel housing designed for retrofit applications. We carefully cut ceiling openings, run new wiring, and install insulation-contact rated fixtures where required by code.</p>
+                        <div class="faq-content">
+                            <p>Yes, we install recessed lights in existing ceilings using remodel housing designed for retrofit applications. We carefully cut ceiling openings, run new wiring, and install insulation-contact rated fixtures where required by code.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         What ceiling types can support heavy light fixtures?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>Most ceiling types can support heavy fixtures with proper reinforcement. We assess ceiling construction, locate joists, and install appropriate mounting systems. Plaster, drywall, and wood ceilings all have specific mounting requirements we understand and follow.</p>
+                        <div class="faq-content">
+                            <p>Most ceiling types can support heavy fixtures with proper reinforcement. We assess ceiling construction, locate joists, and install appropriate mounting systems. Plaster, drywall, and wood ceilings all have specific mounting requirements we understand and follow.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         How do you determine proper fixture placement and spacing?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>We use lighting design principles considering room size, ceiling height, furniture placement, and intended use. Proper spacing ensures even illumination without shadows or glare. We provide recommendations for optimal light distribution and visual appeal.</p>
+                        <div class="faq-content">
+                            <p>We use lighting design principles considering room size, ceiling height, furniture placement, and intended use. Proper spacing ensures even illumination without shadows or glare. We provide recommendations for optimal light distribution and visual appeal.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         Can you install smart lighting controls?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>Yes, we install smart switches, dimmers, and controls compatible with popular home automation systems. Smart controls offer convenience, energy savings, and enhanced security through programmable schedules and remote operation via smartphone apps.</p>
+                        <div class="faq-content">
+                            <p>Yes, we install smart switches, dimmers, and controls compatible with popular home automation systems. Smart controls offer convenience, energy savings, and enhanced security through programmable schedules and remote operation via smartphone apps.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         What happens if my electrical box won't support the new fixture?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>We replace or reinforce electrical boxes as needed. Heavy fixtures require fan-rated or reinforced boxes properly secured to ceiling joists. We assess existing boxes and upgrade to appropriate support systems before fixture installation.</p>
+                        <div class="faq-content">
+                            <p>We replace or reinforce electrical boxes as needed. Heavy fixtures require fan-rated or reinforced boxes properly secured to ceiling joists. We assess existing boxes and upgrade to appropriate support systems before fixture installation.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         How do hurricane conditions affect outdoor lighting?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>We install hurricane-resistant outdoor lighting with impact-resistant fixtures, reinforced mounting, and protected electrical connections. While severe storms may cause damage, proper installation minimizes risk and allows easier restoration after weather events.</p>
+                        <div class="faq-content">
+                            <p>We install hurricane-resistant outdoor lighting with impact-resistant fixtures, reinforced mounting, and protected electrical connections. While severe storms may cause damage, proper installation minimizes risk and allows easier restoration after weather events.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>
                         What's your warranty on lighting installation work?
-                        <span class="faq-icon">+</span>
-                    </button>
+                        </h3>
+                        <div class="faq-icon">+</div>
+                    </div>
                     <div class="faq-answer">
-                        <p>We provide a satisfaction guarantee on all installation work and warranty our workmanship. Specific warranty terms depend on installation type and fixtures used. We stand behind our electrical work and will address any installation-related issues promptly.</p>
+                        <div class="faq-content">
+                            <p>We provide a satisfaction guarantee on all installation work and warranty our workmanship. Specific warranty terms depend on installation type and fixtures used. We stand behind our electrical work and will address any installation-related issues promptly.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -466,6 +518,7 @@
                         <span class="feature">⚡ Licensed Electricians</span>
                         <span class="feature">🔧 Expert Installation</span>
                         <span class="feature">✅ Code Compliant</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -482,6 +535,7 @@
                     <div class="footer-contact">
                         <p><span class="contact-icon">📞</span> (877) 478-2959</p>
                         <p><span class="contact-icon">📍</span> Serving Virginia Beach, VA</p>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -517,27 +571,31 @@
     <!-- JavaScript -->
     <script>
         // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const faqItem = button.parentElement;
-                const faqAnswer = faqItem.querySelector('.faq-answer');
-                const icon = button.querySelector('.faq-icon');
-                
-                const isOpen = faqItem.classList.contains('active');
-                
-                // Close all FAQ items
-                document.querySelectorAll('.faq-item').forEach(item => {
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem && item.classList.contains('active')) {
                     item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = '0px';
                     item.querySelector('.faq-icon').textContent = '+';
-                });
-                
-                // Open clicked item if it wasn't open
-                if (!isOpen) {
-                    faqItem.classList.add('active');
-                    icon.textContent = '-';
                 }
             });
-        });
+            
+            // Toggle current FAQ
+            if (faqItem.classList.contains('active')) {
+                faqItem.classList.remove('active');
+                answer.style.maxHeight = '0px';
+                icon.textContent = '+';
+            } else {
+                faqItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '−';
+            }
+        }
 
         // Mobile Navigation
         const navToggle = document.querySelector('.nav-toggle');
