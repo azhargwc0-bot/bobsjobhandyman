@@ -310,6 +310,11 @@
                 <span class="phone-icon">📞</span>
                 <span>Call Now</span>
             </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -1007,6 +1012,15 @@
                 icon.textContent = '−';
             }
         }
+
+        // Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
 
         // Smooth scroll behavior for internal links
         document.addEventListener('DOMContentLoaded', function() {

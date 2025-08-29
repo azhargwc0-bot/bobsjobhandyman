@@ -113,6 +113,11 @@
                 <span class="phone-icon">📞</span>
                 <span>Call Now</span>
             </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -445,5 +450,16 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

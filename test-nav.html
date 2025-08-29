@@ -95,6 +95,11 @@
                 <a href="faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
             </div>
             <a href="tel:(877) 478-2959" class="nav-phone">(877) 478-2959</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
     
@@ -109,5 +114,16 @@
             <li>Blue phone button</li>
         </ul>
     </div>
+    
+    <script>
+        // Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

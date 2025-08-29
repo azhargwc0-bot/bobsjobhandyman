@@ -85,13 +85,17 @@
                 <span>Handyman</span>
             </div>
             <div class="nav-menu">
-                <a href="index.html#services" class="nav-link">Services</a>
-                <div class="nav-dropdown">
-                    <a href="emergency-repairs-virginia-beach-va.html" class="nav-link">Emergency Repairs</a>
-                    <a href="furniture-assembly-virginia-beach-va.html" class="nav-link">Furniture Assembly</a>
-                    <a href="drywall-repair-virginia-beach-va.html" class="nav-link">Drywall Repair</a>
-                    <a href="plumbing-repairs-virginia-beach-va.html" class="nav-link">Plumbing Repairs</a>
-                    <a href="electrical-work-virginia-beach-va.html" class="nav-link active">Electrical Work</a>
+                <div class="nav-dropdown-container">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                    <div class="nav-dropdown">
+                        <a href="emergency-repairs-virginia-beach-va.html" class="nav-link">Emergency Repairs</a>
+                        <a href="furniture-assembly-virginia-beach-va.html" class="nav-link">Furniture Assembly</a>
+                        <a href="drywall-repair-virginia-beach-va.html" class="nav-link">Drywall Repair</a>
+                        <a href="plumbing-repairs-virginia-beach-va.html" class="nav-link">Plumbing Repairs</a>
+                        <a href="electrical-work-virginia-beach-va.html" class="nav-link active">Electrical Work</a>
+                        <a href="home-maintenance-virginia-beach-va.html" class="nav-link">Home Maintenance</a>
+                        <a href="carpentry-services-virginia-beach-va.html" class="nav-link">Carpentry Services</a>
+                    </div>
                 </div>
                 <a href="about-us-virginia-beach-handyman.html" class="nav-link">About Us</a>
                 <a href="faq-virginia-beach-handyman.html" class="nav-link">FAQ</a>
@@ -101,6 +105,11 @@
                 <span class="phone-icon">📞</span>
                 <span>Call Now</span>
             </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -403,5 +412,16 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
